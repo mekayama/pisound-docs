@@ -1,0 +1,3 @@
+[submodule "docs"]
+	path = docs
+	url = https://github.com/BlokasLabs/pisound-docs.wiki.git

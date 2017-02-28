@@ -1,0 +1,46 @@
+site_name: pisound documentation
+theme: material
+extra:
+  logo: 'images/logo.svg'
+  palette:
+    primary: 'blue'
+    accent: 'blue'
+  social:
+    - type: 'github'
+      link: 'https://github.com/BlokasLabs'
+    - type: 'twitter'
+      link: 'https://twitter.com/blokaslabs'
+    - type: 'facebook'
+      link: 'https://www.facebook.com/blokaslabs/'
+extra_css:
+  - 'css/style.css'
+repo_name: 'pisound-docs'
+repo_url: 'https://github.com/BlokasLabs/pisound-docs.git'
+
+markdown_extensions:
+  - pymdownx.arithmatex
+  - pymdownx.betterem(smart_enable=all)
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist(custom_checkbox=true)
+  - pymdownx.tilde
+
+copyright: 'Copyright &copy; 2017 VILNIAUS BLOKAS UAB'
+
+pages:
+- Getting Started: index.md
+- Audio: audio.md
+- MIDI: midi.md
+- The Button: the-button.md
+- Software: software.md
+- pisound & Pure Data: pisound-&-Pure-Data.md
+- Specs: specs.md
+- Example Projects: Example-projects.md
+- FAQs: faqs.md
