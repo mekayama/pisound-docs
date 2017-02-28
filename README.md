@@ -12,8 +12,9 @@ Everyone can contribute through GitHub UI or cloning repo `git clone http://gith
 ## Displaying images
 `![name](https://raw.githubusercontent.com/wiki/BlokasLabs/pisound-docs/images/{name}.png)`
 
-## Linking to section
+## Linking to a section
 
 To create an anchor to a heading in github flavored markdown. Add - characters between each word in the heading and wrap the value in parens (#some-markdown-heading) so your link should look like so:
 
-`[Linking to section](#Linking-to-section)`
+`[Linking to a section](#section-name)`
+`[Linking to a section in another page](page-name#section-name)`
