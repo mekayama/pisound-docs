@@ -250,9 +250,34 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        pisound & Pure Data
+      </label>
+    
     <a href="./" title="pisound & Pure Data" class="md-nav__link md-nav__link--active">
       pisound & Pure Data
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-pure-data" title="Configuring Pure Data" class="md-nav__link">
+    Configuring Pure Data
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -310,6 +335,18 @@
     
   
   
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-pure-data" title="Configuring Pure Data" class="md-nav__link">
+    Configuring Pure Data
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -328,6 +365,16 @@
 <p>If you haven't already, you can install Pure Data by running the following command in a Terminal window:</p>
 <div class="highlight"><pre><span></span>sudo apt-get install puredata
 </pre></div>
+
+
+<h2 id="configuring-pure-data">Configuring Pure Data</h2>
+<p>By default, Pure Data is launched when <a href="https://github.com/BlokasLabs/pisound/blob/master/pisound-btn/single_click.sh#L88">single-clicking</a> the button as so:</p>
+<div class="highlight"><pre><span></span>nohup puredata -alsa -audioadddev pisound -alsamidi -channels 2 -r 48000 -mididev 1 -send &quot;;pd dsp 1&quot; &quot;$PURE_DATA_PATCH&quot; &gt; /dev/null 2&gt;&amp;1 &amp;
+</pre></div>
+
+
+<p>You may want to customize the command line arguments for Pure Data according to your own needs. To do that, check the <a href="https://puredata.info/docs/faq/commandline">Pure Data's Command Line</a> documentation and edit /usr/local/etc/pisound/single-click.sh.</p>
+<p>Keep in mind that updating pisound's software will backup and overwrite your scripts, so in that case, you may want to re-apply your changes. See <a href="../software/#installing-the-driver">here</a> for more details.</p>
               
               
             </article>
@@ -410,8 +457,6 @@
     
       <script src="../assets/javascripts/application-30ac6a1727.js"></script>
       <script>app.initialize({url:{base:".."}})</script>
-      
-        <script src="../static/assets/script.js"></script>
       
     
     
