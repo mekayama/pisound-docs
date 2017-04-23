@@ -11,11 +11,11 @@
       
         <link rel="shortcut icon" href="../favicon.ico">
       
-      <meta name="generator" content="mkdocs-0.16.2, mkdocs-material-1.1.1">
+      <meta name="generator" content="mkdocs-0.16.1, mkdocs-material-1.1.1">
     
     
       
-        <title>pisound & Pure Data - pisound documentation</title>
+        <title>Pisound & Pure Data - pisound documentation</title>
       
     
     
@@ -79,7 +79,7 @@
             
               
             
-            pisound & Pure Data
+            Pisound & Pure Data
           
         </span>
       </div>
@@ -251,11 +251,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        pisound & Pure Data
+        Pisound & Pure Data
       </label>
     
-    <a href="./" title="pisound & Pure Data" class="md-nav__link md-nav__link--active">
-      pisound & Pure Data
+    <a href="./" title="Pisound & Pure Data" class="md-nav__link md-nav__link--active">
+      Pisound & Pure Data
     </a>
     
       
@@ -279,6 +279,18 @@
   
 </nav>
     
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../MODEP/" title="MOD Emulator for Pisound" class="md-nav__link">
+      MOD Emulator for Pisound
+    </a>
   </li>
 
     
@@ -363,11 +375,15 @@
 <p>Plug in a USB drive containing your Pure Data patch, main patch file called <strong>main.pd</strong>, plug in any additional MIDI controller/keyboard, press The Button and Voilà!</p>
 <p>You can read more about The Button functionality <a href="../the-button">here</a>.</p>
 <p>If you haven't already, you can install Pure Data by running the following command in a Terminal window:</p>
-<pre class="highlight"><code class="linenums">sudo apt-get install puredata</code></pre>
+<div class="highlight"><pre><span></span>sudo apt-get install puredata
+</pre></div>
+
 
 <h2 id="configuring-pure-data">Configuring Pure Data</h2>
 <p>By default, Pure Data is launched when <a href="https://github.com/BlokasLabs/pisound/blob/master/pisound-btn/single_click.sh#L88">single-clicking</a> the button as so:</p>
-<pre class="highlight"><code class="linenums">nohup puredata -alsa -audioadddev pisound -alsamidi -channels 2 -r 48000 -mididev 1 -send &quot;;pd dsp 1&quot; &quot;$PURE_DATA_PATCH&quot; &gt; /dev/null 2&gt;&amp;1 &amp;</code></pre>
+<div class="highlight"><pre><span></span>nohup puredata -alsa -audioadddev pisound -alsamidi -channels 2 -r 48000 -mididev 1 -send &quot;;pd dsp 1&quot; &quot;$PURE_DATA_PATCH&quot; &gt; /dev/null 2&gt;&amp;1 &amp;
+</pre></div>
+
 
 <p>You may want to customize the command line arguments for Pure Data according to your own needs. To do that, check the <a href="https://puredata.info/docs/faq/commandline">Pure Data's Command Line</a> documentation and edit /usr/local/etc/pisound/single-click.sh.</p>
 <p>Keep in mind that updating pisound's software will backup and overwrite your scripts, so in that case, you may want to re-apply your changes. See <a href="../software/#installing-the-driver">here</a> for more details.</p>
@@ -399,13 +415,13 @@
           </a>
         
         
-          <a href="../specs/" title="Specs" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../MODEP/" title="MOD Emulator for Pisound" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Specs
+                MOD Emulator for Pisound
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
