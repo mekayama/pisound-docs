@@ -11,7 +11,7 @@
       
         <link rel="shortcut icon" href="../favicon.ico">
       
-      <meta name="generator" content="mkdocs-0.16.1, mkdocs-material-1.1.1">
+      <meta name="generator" content="mkdocs-0.16.2, mkdocs-material-1.1.1">
     
     
       
@@ -375,15 +375,11 @@
 <p>Plug in a USB drive containing your Pure Data patch, main patch file called <strong>main.pd</strong>, plug in any additional MIDI controller/keyboard, press The Button and Voilà!</p>
 <p>You can read more about The Button functionality <a href="../the-button">here</a>.</p>
 <p>If you haven't already, you can install Pure Data by running the following command in a Terminal window:</p>
-<div class="highlight"><pre><span></span>sudo apt-get install puredata
-</pre></div>
-
+<pre class="highlight"><code class="linenums">sudo apt-get install puredata</code></pre>
 
 <h2 id="configuring-pure-data">Configuring Pure Data</h2>
 <p>By default, Pure Data is launched when <a href="https://github.com/BlokasLabs/pisound/blob/master/pisound-btn/single_click.sh#L88">single-clicking</a> the button as so:</p>
-<div class="highlight"><pre><span></span>nohup puredata -alsa -audioadddev pisound -alsamidi -channels 2 -r 48000 -mididev 1 -send &quot;;pd dsp 1&quot; &quot;$PURE_DATA_PATCH&quot; &gt; /dev/null 2&gt;&amp;1 &amp;
-</pre></div>
-
+<pre class="highlight"><code class="linenums">nohup puredata -alsa -audioadddev pisound -alsamidi -channels 2 -r 48000 -mididev 1 -send &quot;;pd dsp 1&quot; &quot;$PURE_DATA_PATCH&quot; &gt; /dev/null 2&gt;&amp;1 &amp;</code></pre>
 
 <p>You may want to customize the command line arguments for Pure Data according to your own needs. To do that, check the <a href="https://puredata.info/docs/faq/commandline">Pure Data's Command Line</a> documentation and edit /usr/local/etc/pisound/single-click.sh.</p>
 <p>Keep in mind that updating pisound's software will backup and overwrite your scripts, so in that case, you may want to re-apply your changes. See <a href="../software/#installing-the-driver">here</a> for more details.</p>
