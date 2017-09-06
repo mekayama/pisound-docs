@@ -11,11 +11,11 @@
       
         <link rel="shortcut icon" href="./favicon.ico">
       
-      <meta name="generator" content="mkdocs-0.16.2, mkdocs-material-1.1.1">
+      <meta name="generator" content="mkdocs-0.16.1, mkdocs-material-1.1.1">
     
     
       
-        <title>pisound documentation</title>
+        <title>Pisound Docs</title>
       
     
     
@@ -65,7 +65,7 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="." title="pisound documentation" class="md-logo md-header-nav__button">
+          <a href="." title="Pisound Docs" class="md-logo md-header-nav__button">
             <img src="./images/logo.svg" width="24" height="24">
           </a>
         
@@ -149,7 +149,7 @@
         <img src="./images/logo.svg">
       </i>
     
-    pisound documentation
+    Pisound Docs
   </label>
   
     <div class="md-nav__source">
@@ -212,6 +212,26 @@
   <a href="#hardware-setup" title="Hardware Setup" class="md-nav__link">
     Hardware Setup
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pisound" title="Pisound" class="md-nav__link">
+    Pisound
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pisound-acrylic-case" title="Pisound Acrylic Case" class="md-nav__link">
+    Pisound Acrylic Case
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -321,8 +341,8 @@
 
 
   <li class="md-nav__item">
-    <a href="specs/" title="Specs" class="md-nav__link">
-      Specs
+    <a href="specs/" title="Detailed Specs" class="md-nav__link">
+      Detailed Specs
     </a>
   </li>
 
@@ -376,6 +396,26 @@
     Hardware Setup
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pisound" title="Pisound" class="md-nav__link">
+    Pisound
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pisound-acrylic-case" title="Pisound Acrylic Case" class="md-nav__link">
+    Pisound Acrylic Case
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -415,22 +455,28 @@
                 <h1 id="getting-started">Getting Started</h1>
 <p><img alt="pisound-side" src="https://raw.githubusercontent.com/wiki/BlokasLabs/pisound-docs/images/pisound-front.jpg" />
 <img alt="pisound-side" src="https://raw.githubusercontent.com/wiki/BlokasLabs/pisound-docs/images/pisound-back.jpg" /></p>
-<p>pisound is an ultra-low latency high-quality soundcard and MIDI interface specially designed for Raspberry Pi pocket computers. Equipped with 192kHz 24-bit <a href="./audio">Stereo Input and Output</a> driven by the legendary Burr-Brown chips, DIN-5 <a href="./midi">MIDI Input and Output</a> ports, <a href="./the-button">user-customizable button</a> and bundled <a href="./software">software tools</a>, it has everything you need to bring your audio projects to life in no time.</p>
+<p>Pisound is an ultra-low latency high-quality soundcard and MIDI interface specially designed for Raspberry Pi pocket computers. Equipped with 192kHz 24-bit <a href="./audio">Stereo Input and Output</a> driven by the legendary Burr-Brown chips, DIN-5 <a href="./midi">MIDI Input and Output</a> ports, <a href="./the-button">user-customizable button</a> and bundled <a href="./software">software tools</a>, it has everything you need to bring your audio projects to life in no time.</p>
 <h2 id="hardware-setup">Hardware Setup</h2>
-<p>Mount pisound on top of your Raspberry Pi via the 40-pin header and fasten it with the screws provided while the RPi is unpowered, so it appears as in the image at the top. See compatible Raspberry Pi models <a href="./specs#supported-raspberry-pi-models">here</a>.</p>
+<h3 id="pisound">Pisound</h3>
+<p>You should find 1 Pisound and a plastic bag containing 2 knobs, 8 screws and 4 spacers in the Pisound box.</p>
+<p>Mount Pisound on top of your Raspberry Pi via the 40-pin header and fasten it with the screws provided while the RPi is unpowered, so it appears as in the image at the top. See compatible Raspberry Pi models <a href="./specs#supported-raspberry-pi-models">here</a>.</p>
+<h3 id="pisound-acrylic-case">Pisound Acrylic Case</h3>
+<p>The Pisound Acrylic Case consists of 2 cutout sheets of the enclosure sides and a plastic bag containing 4 short spacers, 4 longer ones and a button cap.</p>
 <h2 id="driver-setup">Driver Setup</h2>
 <p>If you don't have any Linux OS running on your Raspberry Pi, we suggest starting with <a href="https://www.raspberrypi.org/documentation/installation/installing-images/README.md">Raspbian</a>.</p>
 <p><a href="./specs#power-supply">Power your Raspberry Pi up</a> and install the driver by running the below commands in a terminal window:</p>
-<pre class="highlight"><code class="language-bash linenums">wget http://blokas.io/pisound/install-pisound.sh -O install-pisound.sh
+<div class="highlight"><pre><span></span>wget http://blokas.io/pisound/install-pisound.sh -O install-pisound.sh
 chmod +x install-pisound.sh
-./install-pisound.sh</code></pre>
+./install-pisound.sh
+</pre></div>
 
-<p>A couple of simple [Y/n] questions will be presented about whether to install some of the additional software to get you started faster and whether to set pisound as the default card.</p>
-<p>After driver installation process is complete, reboot your Raspberry Pi (if the script asked for it at the end) and that's it. Now you can choose pisound as your main sound card through native Volume widget and use it with any Linux Audio/MIDI software. Done! Thank You!</p>
+
+<p>A couple of simple [Y/n] questions will be presented about whether to install some of the additional software to get you started faster and whether to set Pisound as the default card.</p>
+<p>After driver installation process is complete, reboot your Raspberry Pi (if the script asked for it at the end) and that's it. Now you can choose Pisound as your main sound card through native Volume widget and use it with any Linux Audio/MIDI software. Done! Thank You!</p>
 <p>If you hit any issues during driver setup, please see <a href="./software#verifying-it-works">Verifying It Works</a> and provide us <a href="./software#feedback">feedback</a>.</p>
 <h2 id="connect-things">Connect Things</h2>
 <p><img alt="pisound-connections" src="https://raw.githubusercontent.com/wiki/BlokasLabs/pisound-docs/images/connections.png" /></p>
-<p>Raspberry Pi in combination with pisound allows you to connect a huge variety of different types of audio-related gear. Thanks to pisound's Stereo Input with wide-range gain control design, you can connect audio sources ranging from your bass guitar to a CD player or your modular synth. Using Stereo Output you can hook pisound to any mixer, speakers or just plug in your headphones. Volume and Gain levels can be controlled using on-board knobs. For MIDI connectivity you also have a lot of options - MIDI In/Out through on-board DIN-5 sockets, USB-MIDI via RPi's USB ports or even <a href="./the-button#toggle-wifi-hotspot-mode">WiFi-MIDI</a>!</p>
+<p>Raspberry Pi in combination with Pisound allows you to connect a huge variety of different types of audio-related gear. Thanks to Pisound's Stereo Input with wide-range gain control design, you can connect audio sources ranging from your bass guitar to a CD player or your modular synth. Using Stereo Output you can hook Pisound to any mixer, speakers or just plug in your headphones. Volume and Gain levels can be controlled using on-board knobs. For MIDI connectivity you also have a lot of options - MIDI In/Out through on-board DIN-5 sockets, USB-MIDI via RPi's USB ports or even <a href="./the-button#toggle-wifi-hotspot-mode">WiFi-MIDI</a>!</p>
 <h2 id="print-your-own-case">Print Your Own Case</h2>
 <p>To take the setup process one step further, you can even 3D-print your own case. All necessary files can be found <a href="https://github.com/BlokasLabs/pisound-case">here</a>.</p>
 <p><img alt="pisound-case" src="https://raw.githubusercontent.com/wiki/BlokasLabs/pisound-docs/images/pisound-case.png" /></p>
@@ -503,6 +549,23 @@ chmod +x install-pisound.sh
       <script src="./assets/javascripts/application-30ac6a1727.js"></script>
       <script>app.initialize({url:{base:"."}})</script>
       
+      <script>
+  (function() {
+    var slk = document.createElement('script');
+    slk.src = 'https://cdn.slaask.com/chat.js';
+    slk.type = 'text/javascript';
+    slk.async = 'true';
+    slk.onload = slk.onreadystatechange = function() {
+      var rs = this.readyState;
+      if (rs && rs != 'complete' && rs != 'loaded') return;
+      try {
+        _slaask.init('1345291a0cc713cce6f3459dbc343b87');
+      } catch (e) {}
+    };
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(slk, s);
+  })();
+</script>
     
     
       

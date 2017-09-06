@@ -11,11 +11,11 @@
       
         <link rel="shortcut icon" href="../favicon.ico">
       
-      <meta name="generator" content="mkdocs-0.16.2, mkdocs-material-1.1.1">
+      <meta name="generator" content="mkdocs-0.16.1, mkdocs-material-1.1.1">
     
     
       
-        <title>FAQs - pisound documentation</title>
+        <title>FAQs - Pisound Docs</title>
       
     
     
@@ -65,7 +65,7 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href=".." title="pisound documentation" class="md-logo md-header-nav__button">
+          <a href=".." title="Pisound Docs" class="md-logo md-header-nav__button">
             <img src="../images/logo.svg" width="24" height="24">
           </a>
         
@@ -149,7 +149,7 @@
         <img src="../images/logo.svg">
       </i>
     
-    pisound documentation
+    Pisound Docs
   </label>
   
     <div class="md-nav__source">
@@ -266,8 +266,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../specs/" title="Specs" class="md-nav__link">
-      Specs
+    <a href="../specs/" title="Detailed Specs" class="md-nav__link">
+      Detailed Specs
     </a>
   </li>
 
@@ -361,7 +361,9 @@
                 
                 <h2 id="how-to-start-jack-server-for-pisound">How to start Jack Server for pisound?</h2>
 <p>In case you don't have qjackctl installed, run:
-<pre class="highlight"><code class="linenums">sudo apt-get install qjackctl</code></pre>
+<div class="highlight"><pre><span></span>sudo apt-get install qjackctl
+</pre></div>
+
 To start the server, configured to use pisound, follow these steps:</p>
 <ol>
 <li>Run QJackCtl (either from the Applications-&gt;Sound &amp; Video menu or executing 'qjackctl' in a terminal.</li>
@@ -382,7 +384,7 @@ To start the server, configured to use pisound, follow these steps:</p>
 <ul>
 <li>Edit <code>/opt/sonic-pi/app/server/sonicpi/scsynthexternal.rb</code> as root user using your favorite editor (such as vim, nano, geany, or ...).</li>
 <li>Locate the following code snippet:
-<pre class="highlight"><code class="linenums">     case os
+<div class="highlight"><pre><span></span>     case os
      when :raspberry
        boot_server_raspberry_pi
      when :linux
@@ -392,9 +394,11 @@ To start the server, configured to use pisound, follow these steps:</p>
      when :windows
        boot_server_windows
      end
-     true</code></pre></li>
+     true
+</pre></div>
+</li>
 <li>Change it to:
-<pre class="highlight"><code class="linenums">     case os
+<div class="highlight"><pre><span></span>     case os
      when :raspberry
        #boot_server_raspberry_pi
        boot_server_linux
@@ -405,7 +409,9 @@ To start the server, configured to use pisound, follow these steps:</p>
      when :windows
        boot_server_windows
      end
-     true</code></pre></li>
+     true
+</pre></div>
+</li>
 </ul>
 <p>Do this every time you want to start Sonic Pi:</p>
 <ul>
@@ -491,6 +497,23 @@ To start the server, configured to use pisound, follow these steps:</p>
       <script src="../assets/javascripts/application-30ac6a1727.js"></script>
       <script>app.initialize({url:{base:".."}})</script>
       
+      <script>
+  (function() {
+    var slk = document.createElement('script');
+    slk.src = 'https://cdn.slaask.com/chat.js';
+    slk.type = 'text/javascript';
+    slk.async = 'true';
+    slk.onload = slk.onreadystatechange = function() {
+      var rs = this.readyState;
+      if (rs && rs != 'complete' && rs != 'loaded') return;
+      try {
+        _slaask.init('1345291a0cc713cce6f3459dbc343b87');
+      } catch (e) {}
+    };
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(slk, s);
+  })();
+</script>
     
     
       

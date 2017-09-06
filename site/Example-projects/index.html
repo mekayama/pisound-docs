@@ -11,11 +11,11 @@
       
         <link rel="shortcut icon" href="../favicon.ico">
       
-      <meta name="generator" content="mkdocs-0.16.2, mkdocs-material-1.1.1">
+      <meta name="generator" content="mkdocs-0.16.1, mkdocs-material-1.1.1">
     
     
       
-        <title>Example Projects - pisound documentation</title>
+        <title>Example Projects - Pisound Docs</title>
       
     
     
@@ -65,7 +65,7 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href=".." title="pisound documentation" class="md-logo md-header-nav__button">
+          <a href=".." title="Pisound Docs" class="md-logo md-header-nav__button">
             <img src="../images/logo.svg" width="24" height="24">
           </a>
         
@@ -149,7 +149,7 @@
         <img src="../images/logo.svg">
       </i>
     
-    pisound documentation
+    Pisound Docs
   </label>
   
     <div class="md-nav__source">
@@ -266,8 +266,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../specs/" title="Specs" class="md-nav__link">
-      Specs
+    <a href="../specs/" title="Detailed Specs" class="md-nav__link">
+      Detailed Specs
     </a>
   </li>
 
@@ -305,8 +305,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pisound-and-lv2-plugins" title="pisound and LV2 Plugins" class="md-nav__link">
-    pisound and LV2 Plugins
+  <a href="#pisound-and-lv2-plugins" title="Pisound and LV2 Plugins" class="md-nav__link">
+    Pisound and LV2 Plugins
   </a>
   
 </li>
@@ -326,8 +326,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pisound-with-diy-midi-controller" title="pisound with DIY MIDI Controller" class="md-nav__link">
-    pisound with DIY MIDI Controller
+  <a href="#pisound-with-diy-midi-controller" title="Pisound with DIY MIDI Controller" class="md-nav__link">
+    Pisound with DIY MIDI Controller
   </a>
   
 </li>
@@ -372,8 +372,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pisound-and-lv2-plugins" title="pisound and LV2 Plugins" class="md-nav__link">
-    pisound and LV2 Plugins
+  <a href="#pisound-and-lv2-plugins" title="Pisound and LV2 Plugins" class="md-nav__link">
+    Pisound and LV2 Plugins
   </a>
   
 </li>
@@ -393,8 +393,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pisound-with-diy-midi-controller" title="pisound with DIY MIDI Controller" class="md-nav__link">
-    pisound with DIY MIDI Controller
+  <a href="#pisound-with-diy-midi-controller" title="Pisound with DIY MIDI Controller" class="md-nav__link">
+    Pisound with DIY MIDI Controller
   </a>
   
 </li>
@@ -412,17 +412,21 @@
                
               
                 
-                <h1 id="projects-using-pisound">Projects Using pisound</h1>
-<h2 id="pisound-and-lv2-plugins">pisound and LV2 Plugins</h2>
+                <h1 id="projects-using-pisound">Projects Using Pisound</h1>
+<h2 id="pisound-and-lv2-plugins">Pisound and LV2 Plugins</h2>
 <p>On <a href="http://rpi.autostatic.com/">http://rpi.autostatic.com/</a> repository you can find some cool software packages for audio. One of those is <strong>Carla</strong> - a host for LV2 plugins.</p>
 <p><img alt="Carla" src="https://raw.githubusercontent.com/wiki/BlokasLabs/pisound-docs/images/carla.png" /></p>
 <p>So let's give it a go.</p>
 <p>First we have to add the repository to apt-get:
-<pre class="highlight"><code class="linenums">wget -q -O - http://rpi.autostatic.com/autostatic.gpg.key | sudo apt-key add -
+<div class="highlight"><pre><span></span>wget -q -O - http://rpi.autostatic.com/autostatic.gpg.key | sudo apt-key add -
 sudo wget -q -O /etc/apt/sources.list.d/autostatic-audio-raspbian.list http://rpi.autostatic.com/autostatic-audio-raspbian.list
-sudo apt-get update</code></pre>
+sudo apt-get update
+</pre></div>
+
 After that's done, let's install <strong>Carla</strong> as well as <strong>jackd</strong> server and <strong>qjackctl</strong> for configuring it:
-<pre class="highlight"><code class="linenums">sudo apt-get install carla jackd qjackctl</code></pre>
+<div class="highlight"><pre><span></span>sudo apt-get install carla jackd qjackctl
+</pre></div>
+
 Then start <strong>qjackctl</strong>, you can do that by hitting Alt+F2 and typing in <strong>qjackctl</strong> and pressing enter.</p>
 <p>Configure it in Setup... like so:</p>
 <p><img alt="Jack Settings" src="https://raw.githubusercontent.com/wiki/BlokasLabs/pisound-docs/images/jack_settings.png" /></p>
@@ -431,15 +435,17 @@ Then start <strong>qjackctl</strong>, you can do that by hitting Alt+F2 and typi
 <p>Now run Carla (Alt+F2, carla, enter)</p>
 <p>Click Configure Carla and make sure that Audio Driver is set to JACK. It will connect to the already started Jack server. For process mode I've used Single Client, but you can use any option you like.</p>
 <p>Then you can add plugins in Plugins section, and patch them up in Patch Bay section.</p>
-<p>The top screenshot shows <strong>ZSynAddSubFX</strong> connected to pisound's Input and Output, as well as MIDI data routed to the synth plugin.</p>
+<p>The top screenshot shows <strong>ZSynAddSubFX</strong> connected to Pisound's Input and Output, as well as MIDI data routed to the synth plugin.</p>
 <p>There's a couple of plugins readily available to play around within Carla, and you should be able to find more LV2 plugins built for Raspberry Pi to experiment with on the Internet.</p>
 <h2 id="internet-radio-station">Internet Radio Station</h2>
-<p>Using <strong>icecast</strong> and <strong>darkice</strong> you can easily setup your own radio station and broadcast whatever is connected to the pisound input!</p>
+<p>Using <strong>icecast</strong> and <strong>darkice</strong> you can easily setup your own radio station and broadcast whatever is connected to the Pisound input!</p>
 <p>First let's get the required software installed:
-<pre class="highlight"><code class="linenums">sudo apt-get install icecast2 darkice</code></pre>
+<div class="highlight"><pre><span></span>sudo apt-get install icecast2 darkice
+</pre></div>
+
 Then we have to configure the darkice, feel free to customize to your liking.</p>
 <p>Save the below contents to <code>/etc/darkice.cfg</code>
-<pre class="highlight"><code class="linenums"># this section describes general aspects of the live streaming session
+<div class="highlight"><pre><span></span># this section describes general aspects of the live streaming session
 [general]
 duration      = 0                # duration of encoding, in seconds. 0 means forever
 bufferSecs    = 2                # size of internal slip buffer, in seconds
@@ -451,7 +457,7 @@ device        = hw:1,0           # Alsa soundcard device for the audio input
 sampleRate    = 48000            # sample rate in Hz. try 48000, 96000 or 192000
 bitsPerSample = 16               # bits per sample. try 16
 channel       = 2                # channels. 1 = mono, 2 = stereo.
-                                 # Only stereo mode is supported by pisound.
+                                 # Only stereo mode is supported by Pisound.
 
 # this section describes a streaming connection to an IceCast2 server
 # there may be up to 8 of these sections, named [icecast2-0] ... [icecast2-7]
@@ -466,21 +472,23 @@ port          = 8000             # port of the IceCast2 server, usually 8000
 password      = hackme           # source password to the IceCast2 server
 mountPoint    = pisound          # mount point of this stream on the IceCast2 server
 name          = pisound          # name of the stream
-description   = DarkIce on pisound # description of the stream
+description   = DarkIce on Pisound # description of the stream
 url           = http://localhost # URL related to the stream
 genre         = my genre         # genre of the stream
 public        = no               # advertise this stream?
-#localDumpFile = recording.mp3   # Record also to a file</code></pre></p>
+#localDumpFile = recording.mp3   # Record also to a file
+</pre></div>
+</p>
 <p>And finally, execute 'darkice' in a terminal or using Alt+F2:</p>
 <p><code>darkice</code></p>
 <p>Then from other devices you can connect to <code>http://raspberrypi_ip:8000/</code> to see generic information about the station and <code>http://raspberry_pi:8000/pisound</code> to listen. (Replace raspberrypi_ip in the URLs using the IP of the Raspberry Pi)</p>
 <p>For your station to be reachable outside of your local network, you need to have an externally accessible IP address provided by your ISP and you need to configure port forwarding on your router to forward requests on some port to port 8000 on Raspberry Pi. However, this is out of scope for this guide, there should be plenty of info around on how to set that up.</p>
 <h2 id="network-enabled-hi-fi-player">Network Enabled Hi-Fi Player</h2>
-<p>You can use pisound with Volumio! Since version 2.129 (25-03-2017), pisound's module is integrated into Volumio, so installing the latest version or updating should be enough to get 'pisound' listed in Playback Options. Just enable I2S DAcs, pick pisound and save the configuration! We recommend switching the mixer to 'Software', if you want to control the volume within Volumio. You can use 'Hardware' mixer if using the physical volume control on pisound.</p>
-<p>Now you can enjoy using pisound as a network media player!</p>
+<p>You can use Pisound with Volumio! Since version 2.129 (25-03-2017), Pisound's module is integrated into Volumio, so installing the latest version or updating should be enough to get 'pisound' listed in Playback Options. Just enable I2S DACs, pick Pisound and save the configuration! We recommend switching the mixer to 'Software', if you want to control the volume within Volumio. You can use 'Hardware' mixer if using the physical volume control on Pisound.</p>
+<p>Now you can enjoy using Pisound as a network media player!</p>
 <p><img alt="Volumio" src="https://raw.githubusercontent.com/wiki/BlokasLabs/pisound-docs/images/volumio.png" /></p>
-<h2 id="pisound-with-diy-midi-controller">pisound with DIY MIDI Controller</h2>
-<p>If you want to add more controls to your pisound audio projects, you can make your own MIDI controller using a couple of potentiometers, push buttons and any Arduino compatible board that uses ATmega32U4 microcontroller. Alternatively, it should be straightforward to adapt the example code to use DIN-5 MIDI ports, as the usbmidi API interface is compatible with Serial API.</p>
+<h2 id="pisound-with-diy-midi-controller">Pisound with DIY MIDI Controller</h2>
+<p>If you want to add more controls to your Pisound audio projects, you can make your own MIDI controller using a couple of potentiometers, push buttons and any Arduino compatible board that uses ATmega32U4 microcontroller. Alternatively, it should be straightforward to adapt the example code to use DIN-5 MIDI ports, as the usbmidi API interface is compatible with Serial API.</p>
 <p><img alt="DIY MIDI controller" src="https://raw.githubusercontent.com/wiki/BlokasLabs/pisound-docs/images/diy-midi-ctrl.png" /></p>
 <p>Go <a href="https://github.com/BlokasLabs/usbmidi/tree/master/arduino/libraries/usbmidi/examples/midictrl">here</a> for full instructions.</p>
               
@@ -496,7 +504,7 @@ public        = no               # advertise this stream?
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../specs/" title="Specs" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../specs/" title="Detailed Specs" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -505,7 +513,7 @@ public        = no               # advertise this stream?
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Specs
+                Detailed Specs
               </span>
             </div>
           </a>
@@ -566,6 +574,23 @@ public        = no               # advertise this stream?
       <script src="../assets/javascripts/application-30ac6a1727.js"></script>
       <script>app.initialize({url:{base:".."}})</script>
       
+      <script>
+  (function() {
+    var slk = document.createElement('script');
+    slk.src = 'https://cdn.slaask.com/chat.js';
+    slk.type = 'text/javascript';
+    slk.async = 'true';
+    slk.onload = slk.onreadystatechange = function() {
+      var rs = this.readyState;
+      if (rs && rs != 'complete' && rs != 'loaded') return;
+      try {
+        _slaask.init('1345291a0cc713cce6f3459dbc343b87');
+      } catch (e) {}
+    };
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(slk, s);
+  })();
+</script>
     
     
       

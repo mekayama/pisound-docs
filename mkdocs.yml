@@ -1,4 +1,4 @@
-site_name: pisound documentation
+site_name: Pisound Docs
 theme_dir: theme
 site_favicon: favicon.ico
 extra:
@@ -43,6 +43,6 @@ pages:
 - Software: software.md
 - Pisound & Pure Data: pisound-&-Pure-Data.md
 - MOD Emulator for Pisound: MODEP.md
-- Specs: specs.md
+- Detailed Specs: specs.md
 - Example Projects: Example-projects.md
 - FAQs: faqs.md

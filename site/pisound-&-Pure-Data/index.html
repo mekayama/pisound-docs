@@ -11,11 +11,11 @@
       
         <link rel="shortcut icon" href="../favicon.ico">
       
-      <meta name="generator" content="mkdocs-0.16.2, mkdocs-material-1.1.1">
+      <meta name="generator" content="mkdocs-0.16.1, mkdocs-material-1.1.1">
     
     
       
-        <title>Pisound & Pure Data - pisound documentation</title>
+        <title>Pisound & Pure Data - Pisound Docs</title>
       
     
     
@@ -65,7 +65,7 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href=".." title="pisound documentation" class="md-logo md-header-nav__button">
+          <a href=".." title="Pisound Docs" class="md-logo md-header-nav__button">
             <img src="../images/logo.svg" width="24" height="24">
           </a>
         
@@ -149,7 +149,7 @@
         <img src="../images/logo.svg">
       </i>
     
-    pisound documentation
+    Pisound Docs
   </label>
   
     <div class="md-nav__source">
@@ -300,8 +300,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../specs/" title="Specs" class="md-nav__link">
-      Specs
+    <a href="../specs/" title="Detailed Specs" class="md-nav__link">
+      Detailed Specs
     </a>
   </li>
 
@@ -370,19 +370,23 @@
                
               
                 
-                <h1 id="pisound-pure-data">pisound &amp; Pure Data</h1>
-<p>Using pisound you can run your Pure Data patches straight from a USB thumb drive with a press of a button with no need to connect an external monitor, keyboard or mouse.</p>
+                <h1 id="pisound-pure-data">Pisound &amp; Pure Data</h1>
+<p>Using Pisound you can run your Pure Data patches straight from a USB thumb drive with a press of a button with no need to connect an external monitor, keyboard or mouse.</p>
 <p>Plug in a USB drive containing your Pure Data patch, main patch file called <strong>main.pd</strong>, plug in any additional MIDI controller/keyboard, press The Button and Voilà!</p>
 <p>You can read more about The Button functionality <a href="../the-button">here</a>.</p>
 <p>If you haven't already, you can install Pure Data by running the following command in a Terminal window:</p>
-<pre class="highlight"><code class="linenums">sudo apt-get install puredata</code></pre>
+<div class="highlight"><pre><span></span>sudo apt-get install puredata
+</pre></div>
+
 
 <h2 id="configuring-pure-data">Configuring Pure Data</h2>
 <p>By default, Pure Data is launched when <a href="https://github.com/BlokasLabs/pisound/blob/master/pisound-btn/single_click.sh#L88">single-clicking</a> the button as so:</p>
-<pre class="highlight"><code class="linenums">nohup puredata -alsa -audioadddev pisound -alsamidi -channels 2 -r 48000 -mididev 1 -send &quot;;pd dsp 1&quot; &quot;$PURE_DATA_PATCH&quot; &gt; /dev/null 2&gt;&amp;1 &amp;</code></pre>
+<div class="highlight"><pre><span></span>nohup puredata -alsa -audioadddev pisound -alsamidi -channels 2 -r 48000 -mididev 1 -send &quot;;pd dsp 1&quot; &quot;$PURE_DATA_PATCH&quot; &gt; /dev/null 2&gt;&amp;1 &amp;
+</pre></div>
+
 
 <p>You may want to customize the command line arguments for Pure Data according to your own needs. To do that, check the <a href="https://puredata.info/docs/faq/commandline">Pure Data's Command Line</a> documentation and edit /usr/local/etc/pisound/single-click.sh.</p>
-<p>Keep in mind that updating pisound's software will backup and overwrite your scripts, so in that case, you may want to re-apply your changes. See <a href="../software/#installing-the-driver">here</a> for more details.</p>
+<p>Keep in mind that updating Pisound's software will backup and overwrite your scripts, so in that case, you may want to re-apply your changes. See <a href="../software/#installing-the-driver">here</a> for more details.</p>
               
               
             </article>
@@ -466,6 +470,23 @@
       <script src="../assets/javascripts/application-30ac6a1727.js"></script>
       <script>app.initialize({url:{base:".."}})</script>
       
+      <script>
+  (function() {
+    var slk = document.createElement('script');
+    slk.src = 'https://cdn.slaask.com/chat.js';
+    slk.type = 'text/javascript';
+    slk.async = 'true';
+    slk.onload = slk.onreadystatechange = function() {
+      var rs = this.readyState;
+      if (rs && rs != 'complete' && rs != 'loaded') return;
+      try {
+        _slaask.init('1345291a0cc713cce6f3459dbc343b87');
+      } catch (e) {}
+    };
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(slk, s);
+  })();
+</script>
     
     
       

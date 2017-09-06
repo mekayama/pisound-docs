@@ -11,11 +11,11 @@
       
         <link rel="shortcut icon" href="../favicon.ico">
       
-      <meta name="generator" content="mkdocs-0.16.2, mkdocs-material-1.1.1">
+      <meta name="generator" content="mkdocs-0.16.1, mkdocs-material-1.1.1">
     
     
       
-        <title>The Button - pisound documentation</title>
+        <title>The Button - Pisound Docs</title>
       
     
     
@@ -65,7 +65,7 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href=".." title="pisound documentation" class="md-logo md-header-nav__button">
+          <a href=".." title="Pisound Docs" class="md-logo md-header-nav__button">
             <img src="../images/logo.svg" width="24" height="24">
           </a>
         
@@ -149,7 +149,7 @@
         <img src="../images/logo.svg">
       </i>
     
-    pisound documentation
+    Pisound Docs
   </label>
   
     <div class="md-nav__source">
@@ -321,8 +321,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../specs/" title="Specs" class="md-nav__link">
-      Specs
+    <a href="../specs/" title="Detailed Specs" class="md-nav__link">
+      Detailed Specs
     </a>
   </li>
 
@@ -413,7 +413,7 @@
               
                 
                 <h1 id="the-button">The Button</h1>
-<p>The Button is a customizable button on the pisound board. There's 4 possible interactions with it:</p>
+<p>The Button is a customizable button on the Pisound board. There's 4 possible interactions with it:</p>
 <ol>
 <li>Press, hold and release after 1 or more seconds passed. Executes <code>/usr/local/etc/pisound/hold.sh</code></li>
 <li>Click once. Executes <code>/usr/local/etc/pisound/single_click.sh</code></li>
@@ -434,9 +434,11 @@
 <p>Triple-clicking will reconfigure the WiFi of RPi3 board or an external SoftAP capable USB WiFi adapter to behave as an Access Point (a.k.a. Wireless Router), as well as start 'touchosc2midi' monitor which will be ready to listen and forward MyOsc data as MIDI to other software such as Pure Data.</p>
 <p>By default, the AP will appear as '<strong>pisound</strong>', and the default password is '<strong>blokaslabs</strong>' (without quotes). You can change the name and password by modifying <code>/usr/local/etc/pisound/hostapd.conf</code> Keep in mind that this file gets backed up and overwritten after reinstalling or updating the pisound-btn software.</p>
 <p>The default IP address of RPi in WiFi Hotspot mode is 172.24.1.1 which you can use for ssh, VNC or wireless OSC / MIDI data! That means that you can easily interact with your system using just your laptop or phone, no more wires apart from power supply is needed! And it gets better, if the LAN cable is connected to RPi, it will share the Internet with the connected devices over WiFi!</p>
-<p>To send MIDI OSC messages from your other devices to pisound, connect to the pisound's WiFi network, and set the 172.24.1.1 IP as the host in the software you're using (such as MyOSC or TouchOSC) settings. See [[here|faqs#how-to-send-wifi-midi-messages-to-your-raspberry-pi]] for more information.</p>
+<p>To send MIDI OSC messages from your other devices to Pisound, connect to the Pisound's WiFi network, and set the 172.24.1.1 IP as the host in the software you're using (such as MyOSC or TouchOSC) settings. See [[here|faqs#how-to-send-wifi-midi-messages-to-your-raspberry-pi]] for more information.</p>
 <p>To access RPi using ssh and/or VNC, make sure they're enabled in <code>raspi-config</code>. To enable, run in terminal:
-<pre class="highlight"><code class="language-bash linenums">sudo raspi-config</code></pre>
+<div class="highlight"><pre><span></span>sudo raspi-config
+</pre></div>
+
 Go to <strong>Interfacing Options</strong> and make sure <strong>ssh</strong> and <strong>VNC</strong> are enabled. If you don't see these options, go to <strong>Advanced Options</strong> and do <strong>Update</strong>.</p>
 <p>Triple-clicking again will revert to regular WiFi behavior.</p>
               
@@ -522,6 +524,23 @@ Go to <strong>Interfacing Options</strong> and make sure <strong>ssh</strong> an
       <script src="../assets/javascripts/application-30ac6a1727.js"></script>
       <script>app.initialize({url:{base:".."}})</script>
       
+      <script>
+  (function() {
+    var slk = document.createElement('script');
+    slk.src = 'https://cdn.slaask.com/chat.js';
+    slk.type = 'text/javascript';
+    slk.async = 'true';
+    slk.onload = slk.onreadystatechange = function() {
+      var rs = this.readyState;
+      if (rs && rs != 'complete' && rs != 'loaded') return;
+      try {
+        _slaask.init('1345291a0cc713cce6f3459dbc343b87');
+      } catch (e) {}
+    };
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(slk, s);
+  })();
+</script>
     
     
       
