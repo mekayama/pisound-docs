@@ -268,6 +268,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../Pisound-App/" title="Pisound App" class="md-nav__link">
+      Pisound App
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="../MODEP/" title="MOD Emulator for Pisound" class="md-nav__link">
       MOD Emulator for Pisound
     </a>
@@ -432,15 +444,11 @@
 <p><img alt="Carla" src="https://raw.githubusercontent.com/wiki/BlokasLabs/pisound-docs/images/carla.png" /></p>
 <p>So let's give it a go.</p>
 <p>First we have to add the repository to apt-get:
-<div class="highlight"><pre><span></span>wget -q -O - http://rpi.autostatic.com/autostatic.gpg.key | sudo apt-key add -
+<pre class="highlight"><code class="linenums">wget -q -O - http://rpi.autostatic.com/autostatic.gpg.key | sudo apt-key add -
 sudo wget -q -O /etc/apt/sources.list.d/autostatic-audio-raspbian.list http://rpi.autostatic.com/autostatic-audio-raspbian.list
-sudo apt-get update
-</pre></div>
-
+sudo apt-get update</code></pre>
 After that's done, let's install <strong>Carla</strong> as well as <strong>jackd</strong> server and <strong>qjackctl</strong> for configuring it:
-<div class="highlight"><pre><span></span>sudo apt-get install carla jackd qjackctl
-</pre></div>
-
+<pre class="highlight"><code class="linenums">sudo apt-get install carla jackd qjackctl</code></pre>
 Then start <strong>qjackctl</strong>, you can do that by hitting Alt+F2 and typing in <strong>qjackctl</strong> and pressing enter.</p>
 <p>Configure it in Setup... like so:</p>
 <p><img alt="Jack Settings" src="https://raw.githubusercontent.com/wiki/BlokasLabs/pisound-docs/images/jack_settings.png" /></p>
@@ -454,12 +462,10 @@ Then start <strong>qjackctl</strong>, you can do that by hitting Alt+F2 and typi
 <h2 id="internet-radio-station">Internet Radio Station</h2>
 <p>Using <strong>icecast</strong> and <strong>darkice</strong> you can easily setup your own radio station and broadcast whatever is connected to the Pisound input!</p>
 <p>First let's get the required software installed:
-<div class="highlight"><pre><span></span>sudo apt-get install icecast2 darkice
-</pre></div>
-
+<pre class="highlight"><code class="linenums">sudo apt-get install icecast2 darkice</code></pre>
 Then we have to configure the darkice, feel free to customize to your liking.</p>
 <p>Save the below contents to <code>/etc/darkice.cfg</code>
-<div class="highlight"><pre><span></span># this section describes general aspects of the live streaming session
+<pre class="highlight"><code class="linenums"># this section describes general aspects of the live streaming session
 [general]
 duration      = 0                # duration of encoding, in seconds. 0 means forever
 bufferSecs    = 2                # size of internal slip buffer, in seconds
@@ -490,9 +496,7 @@ description   = DarkIce on Pisound # description of the stream
 url           = http://localhost # URL related to the stream
 genre         = my genre         # genre of the stream
 public        = no               # advertise this stream?
-#localDumpFile = recording.mp3   # Record also to a file
-</pre></div>
-</p>
+#localDumpFile = recording.mp3   # Record also to a file</code></pre></p>
 <p>And finally, execute 'darkice' in a terminal or using Alt+F2:</p>
 <p><code>darkice</code></p>
 <p>Then from other devices you can connect to <code>http://raspberrypi_ip:8000/</code> to see generic information about the station and <code>http://raspberry_pi:8000/pisound</code> to listen. (Replace raspberrypi_ip in the URLs using the IP of the Raspberry Pi)</p>

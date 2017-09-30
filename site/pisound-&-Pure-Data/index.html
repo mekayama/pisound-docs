@@ -302,6 +302,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../Pisound-App/" title="Pisound App" class="md-nav__link">
+      Pisound App
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="../MODEP/" title="MOD Emulator for Pisound" class="md-nav__link">
       MOD Emulator for Pisound
     </a>
@@ -388,16 +400,13 @@
 <p>Using Pisound you can run your Pure Data patches straight from a USB thumb drive with a press of a button with no need to connect an external monitor, keyboard or mouse.</p>
 <p>Plug in a USB drive containing your Pure Data patch, main patch file called <strong>main.pd</strong>, plug in any additional MIDI controller/keyboard, press The Button and Voilà!</p>
 <p>You can read more about The Button functionality <a href="../the-button">here</a>.</p>
+<p>Also you may be interested in the [[Pisound App]].</p>
 <p>If you haven't already, you can install Pure Data by running the following command in a Terminal window:</p>
-<div class="highlight"><pre><span></span>sudo apt-get install puredata
-</pre></div>
-
+<pre class="highlight"><code class="linenums">sudo apt-get install puredata</code></pre>
 
 <h2 id="configuring-pure-data">Configuring Pure Data</h2>
 <p>By default, Pure Data is launched when <a href="https://github.com/BlokasLabs/pisound/blob/master/pisound-btn/single_click.sh#L88">single-clicking</a> the button as so:</p>
-<div class="highlight"><pre><span></span>nohup puredata -alsa -audioadddev pisound -alsamidi -channels 2 -r 48000 -mididev 1 -send &quot;;pd dsp 1&quot; &quot;$PURE_DATA_PATCH&quot; &gt; /dev/null 2&gt;&amp;1 &amp;
-</pre></div>
-
+<pre class="highlight"><code class="linenums">nohup puredata -alsa -audioadddev pisound -alsamidi -channels 2 -r 48000 -mididev 1 -send &quot;;pd dsp 1&quot; &quot;$PURE_DATA_PATCH&quot; &gt; /dev/null 2&gt;&amp;1 &amp;</code></pre>
 
 <p>You may want to customize the command line arguments for Pure Data according to your own needs. To do that, check the <a href="https://puredata.info/docs/faq/commandline">Pure Data's Command Line</a> documentation and edit /usr/local/etc/pisound/single-click.sh.</p>
 <p>Keep in mind that updating Pisound's software will backup and overwrite your scripts, so in that case, you may want to re-apply your changes. See <a href="../software/#installing-the-driver">here</a> for more details.</p>
@@ -429,13 +438,13 @@
           </a>
         
         
-          <a href="../MODEP/" title="MOD Emulator for Pisound" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../Pisound-App/" title="Pisound App" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                MOD Emulator for Pisound
+                Pisound App
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
