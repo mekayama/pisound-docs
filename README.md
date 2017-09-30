@@ -1,5 +1,5 @@
 # pisound-docs
-If your are looking for pisound documentation, head straight to the [Wiki page!](https://github.com/BlokasLabs/pisound-docs/wiki)
+If your are looking for Pisound documentation, head straight to the [Wiki page!](https://github.com/BlokasLabs/pisound-docs/wiki)
 
 # Contribution guide
 Everyone can contribute through GitHub Wiki UI or cloning repo `git clone http://github.com/BlokasLabs/pisound-docs.wiki.git`.
