@@ -3,80 +3,88 @@
 
     
     <url>
-     <loc>/</loc>
-     <lastmod>2017-09-06</lastmod>
+     <loc>https://blokas.io/</loc>
+     <lastmod>2017-09-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/audio/</loc>
-     <lastmod>2017-09-06</lastmod>
+     <loc>https://blokas.io/audio/</loc>
+     <lastmod>2017-09-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/midi/</loc>
-     <lastmod>2017-09-06</lastmod>
+     <loc>https://blokas.io/midi/</loc>
+     <lastmod>2017-09-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/the-button/</loc>
-     <lastmod>2017-09-06</lastmod>
+     <loc>https://blokas.io/software/</loc>
+     <lastmod>2017-09-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/software/</loc>
-     <lastmod>2017-09-06</lastmod>
+     <loc>https://blokas.io/the-button/</loc>
+     <lastmod>2017-09-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/pisound-&-Pure-Data/</loc>
-     <lastmod>2017-09-06</lastmod>
+     <loc>https://blokas.io/pisound-app/</loc>
+     <lastmod>2017-09-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/MODEP/</loc>
-     <lastmod>2017-09-06</lastmod>
+     <loc>https://blokas.io/pisound-&-Pure-Data/</loc>
+     <lastmod>2017-09-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/specs/</loc>
-     <lastmod>2017-09-06</lastmod>
+     <loc>https://blokas.io/MODEP/</loc>
+     <lastmod>2017-09-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/Example-projects/</loc>
-     <lastmod>2017-09-06</lastmod>
+     <loc>https://blokas.io/specs/</loc>
+     <lastmod>2017-09-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/faqs/</loc>
-     <lastmod>2017-09-06</lastmod>
+     <loc>https://blokas.io/Example-projects/</loc>
+     <lastmod>2017-09-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>https://blokas.io/faqs/</loc>
+     <lastmod>2017-09-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     

@@ -1,0 +1,825 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <link rel="canonical" href="https://blokas.io/pisound-app/">
+      
+      
+      
+        <link rel="shortcut icon" href="../favicon.ico">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.1.1">
+    
+    
+      
+        <title>Pisound Mobile App - Pisound Docs</title>
+      
+    
+    
+      <script src="../assets/javascripts/modernizr-56ade86843.js"></script>
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application-4ebe3f1d68.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../css/style.css">
+    
+    
+  </head>
+  
+  
+  
+  
+    <body>
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="https://blokas.io" title="Pisound Docs" class="md-logo md-header-nav__button">
+            <img src="../images/logo.svg" width="24" height="24">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+            
+            Pisound Mobile App
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <div class="md-search__overlay"></div>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <div class="md-header-nav__source">
+          
+            
+
+
+  
+
+
+  <a href="https://github.com/BlokasLabs/pisound-docs/wiki" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      pisound-docs-wiki
+    </div>
+  </a>
+
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-logo md-nav__button">
+        <a href="https://blokas.io">
+          <img src="../images/logo.svg">
+        </a>
+      </i>
+    
+    Pisound Docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/BlokasLabs/pisound-docs/wiki" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      pisound-docs-wiki
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../audio/" title="Audio" class="md-nav__link">
+      Audio
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../midi/" title="MIDI" class="md-nav__link">
+      MIDI
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../software/" title="Software" class="md-nav__link">
+      Software
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../the-button/" title="The Button" class="md-nav__link">
+      The Button
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Pisound Mobile App
+      </label>
+    
+    <a href="./" title="Pisound Mobile App" class="md-nav__link md-nav__link--active">
+      Pisound Mobile App
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#software-setup" title="Software Setup" class="md-nav__link">
+    Software Setup
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi" title="Raspberry Pi" class="md-nav__link">
+    Raspberry Pi
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#android" title="Android" class="md-nav__link">
+    Android
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-is-the-location-permission-required" title="Why is the Location Permission Required?" class="md-nav__link">
+    Why is the Location Permission Required?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-app" title="Using the App" class="md-nav__link">
+    Using the App
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connecting-to-the-raspberry-pi" title="Connecting to the Raspberry Pi" class="md-nav__link">
+    Connecting to the Raspberry Pi
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#starting-a-patch" title="Starting a Patch" class="md-nav__link">
+    Starting a Patch
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pure-data" title="Pure Data" class="md-nav__link">
+    Pure Data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#looking-at-output" title="Looking at Output" class="md-nav__link">
+    Looking at Output
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disconnecting" title="Disconnecting" class="md-nav__link">
+    Disconnecting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-the-server" title="Managing the Server" class="md-nav__link">
+    Managing the Server
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customization" title="Customization" class="md-nav__link">
+    Customization
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#patch_listsh" title="patch_list.sh" class="md-nav__link">
+    patch_list.sh
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#patch_runsh" title="patch_run.sh" class="md-nav__link">
+    patch_run.sh
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run_pdsh" title="run_pd.sh" class="md-nav__link">
+    run_pd.sh
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contribution-guide" title="Contribution Guide" class="md-nav__link">
+    Contribution Guide
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../pisound-%26-Pure-Data/" title="Pisound & Pure Data" class="md-nav__link">
+      Pisound & Pure Data
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../MODEP/" title="MOD Emulator for Pisound" class="md-nav__link">
+      MOD Emulator for Pisound
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../specs/" title="Detailed Specs" class="md-nav__link">
+      Detailed Specs
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Example-projects/" title="Example Projects" class="md-nav__link">
+      Example Projects
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../faqs/" title="FAQs" class="md-nav__link">
+      FAQs
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#software-setup" title="Software Setup" class="md-nav__link">
+    Software Setup
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi" title="Raspberry Pi" class="md-nav__link">
+    Raspberry Pi
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#android" title="Android" class="md-nav__link">
+    Android
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-is-the-location-permission-required" title="Why is the Location Permission Required?" class="md-nav__link">
+    Why is the Location Permission Required?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-app" title="Using the App" class="md-nav__link">
+    Using the App
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connecting-to-the-raspberry-pi" title="Connecting to the Raspberry Pi" class="md-nav__link">
+    Connecting to the Raspberry Pi
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#starting-a-patch" title="Starting a Patch" class="md-nav__link">
+    Starting a Patch
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pure-data" title="Pure Data" class="md-nav__link">
+    Pure Data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#looking-at-output" title="Looking at Output" class="md-nav__link">
+    Looking at Output
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disconnecting" title="Disconnecting" class="md-nav__link">
+    Disconnecting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-the-server" title="Managing the Server" class="md-nav__link">
+    Managing the Server
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customization" title="Customization" class="md-nav__link">
+    Customization
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#patch_listsh" title="patch_list.sh" class="md-nav__link">
+    patch_list.sh
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#patch_runsh" title="patch_run.sh" class="md-nav__link">
+    patch_run.sh
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run_pdsh" title="run_pd.sh" class="md-nav__link">
+    run_pd.sh
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contribution-guide" title="Contribution Guide" class="md-nav__link">
+    Contribution Guide
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+               
+              
+                
+                <h1 id="pisound-app">Pisound App</h1>
+<p>The mobile app communicates with a dedicated server running on Raspberry Pi &amp; Pisound via Bluetooth. It is called Pisound Control Server (<code>pisound-ctl</code>) and it allows listing all supported patches in a predefined location and to selectively launch the patches in the appropriate software, making headless browsing and switching between patches easy.</p>
+<p>The stdout and stderr outputs of the launched application are displayed in real time, informing the user on what is going on with the patch application.</p>
+<p>The design is extensible - new scripts could be added to support launching patches on other audio applications, based on the file extension, see the Customization section for more details.</p>
+<h2 id="software-setup">Software Setup</h2>
+<h3 id="raspberry-pi">Raspberry Pi</h3>
+<p>First, make sure that Pisound is set up and that <code>pisound-btn --version</code> says it’s 1.04 or higher. If it is not, follow the install instructions on <a href="../home#driver-setup">Driver Setup</a>. The <code>install-pisound.sh</code> will update <code>pisound-btn</code> if it is already installed.</p>
+<p>If using Raspberry Pi without built-in Bluetooth support, connect a USB Bluetooth dongle to it.</p>
+<p>Then, add Blokas’ apt server:</p>
+<pre><code>wget -q -O - https://blokas.io/apt-setup.sh | sh
+</code></pre>
+<p>And install the Pisound Control Server:</p>
+<pre><code>sudo apt-get install pisound-ctl
+</code></pre>
+<p>After installing, <code>pisound-ctl</code> will get launched automatically and will be added to system auto start.</p>
+<h3 id="android">Android</h3>
+<p>Accept beta testing invitation <a href="https://play.google.com/apps/testing/com.blokas.pisoundctl">here</a>. (Make sure you’re doing this logged in with the account you’re using on Play Store)</p>
+<p>The beta acceptance propagation in Google servers seems to take a while, the Play Store link below <strong>will take up to 20 minutes</strong> before it starts working for you. Until then, it will show you “<em>We’re sorry, the requested URL was not found on this server.</em>” We know what you’re thinking, but no - the link is fine, just be patient and hit F5. 🙂 It may take even longer for the app to appear when searching for ‘Pisound’ on mobile version of the Play Store, however, you may request for the app to be installed remotely to your device using the link below.</p>
+<p>Install the Pisound app on your device <a href="https://play.google.com/store/apps/details?id=com.blokas.pisoundctl">here</a>.</p>
+<h4 id="why-is-the-location-permission-required">Why is the Location Permission Required?</h4>
+<p>As much as we hate excess permission requests ourselves, there’s no way we can avoid requesting this one. We don’t need or store your location information. It’s required for an application to declare <a href="https://developer.android.com/reference/android/Manifest.permission.html#ACCESS_COARSE_LOCATION">ACCESS_COARSE_LOCATION</a> permission in its Manifest for the application to be able to initiate discovery of nearby Bluetooth devices.</p>
+<p>This is a new requirement since Android OS 6.0 - a nice summary of the issue is available <a href="https://stackoverflow.com/questions/33045581/location-needs-to-be-enabled-for-bluetooth-low-energy-scanning-on-android-6-0">here</a>.</p>
+<p><a href="https://developer.android.com/about/versions/marshmallow/android-6.0-changes.html#behavior-notifications">More info</a> on the new behavior.</p>
+<h2 id="using-the-app">Using the App</h2>
+<h3 id="connecting-to-the-raspberry-pi">Connecting to the Raspberry Pi</h3>
+<p>Hold The Button on Pisound for 3 LED blinks (but less than 5 or the shutdown will get triggered instead) to make it discoverable to other Bluetooth devices. After a while (180 seconds by default), it will automatically switch off the discoverability and the LED blinking should stop. This needs to be done only for initially pairing your device to Raspberry Pi. Afterwards, if using same devices and if they weren’t unpaired, switching discoverability on is not needed, you may connect as usual. You may manually turn the discoverability off before it times out on Raspberry Pi by holding The Button for 3 LED blinks.</p>
+<p>The initial screen of the Pisound app will list the paired Bluetooth devices immediately, and will automatically initiate discovery of other nearby devices. Once you see your Raspberry Pi in the list (usually <code>raspberrypi</code> unless you changed its hostname), tap it to connect to it. In case it didn’t appear in the list, make sure that it is in discoverable mode and you may pull the list down in order to manually initiate a new scan of nearby devices.</p>
+<p>If when starting the app it was already successfully connected to some device before, it would attempt to automatically connect to that device once.</p>
+<h3 id="starting-a-patch">Starting a Patch</h3>
+<p>Click ‘Start a Patch’ button - it will display a list of patches produced by <code>/usr/local/etc/pisound-ctl/patch_list.sh</code> script on Raspberry Pi. You may modify it to fit your needs or add support for other software.</p>
+<p>After you click on one of the list items, <code>/usr/local/etc/pisound-ctl/patch_run.sh &lt;patch&gt;</code> will get executed. This script is responsible for launching the software to handle the selected patch. First it extracts the extension, and dispatches handling to a script dedicated for the given extension. In Pure Data patch case, it detects ‘.pd’ extension, and executes <code>/usr/local/etc/pisound-ctl/run_pd.sh &lt;patch&gt;</code>.</p>
+<p>Feel free to modify the scripts, add support for other software, etc… Contributions are welcome! 🙂 See <a href="#contribution-guide">Contribution Guide</a> for details on how you can participate.</p>
+<p>After the patch is launched, the app immediately switches to the Output view page.</p>
+<p>You may pull the list down to refresh it.</p>
+<p>Pressing the ‘back’ button would go back to the main menu.</p>
+<h4 id="pure-data">Pure Data</h4>
+<p>The Pure Data patches may consist of multiple .pd files. The convention is to have a subfolder for the entire patch, and the entry point to it should be called 'main.pd', and only files named like that are being searched for. An example location would be <code>/usr/local/etc/puredata-patches/testtone/main.pd</code></p>
+<h3 id="looking-at-output">Looking at Output</h3>
+<p>The ‘Show Output…’ button initially is disabled, until there is some output to show. If it’s enabled, pressing the button would navigate to the Output display page. If the bottom line is visible in the view, the view will auto-scroll to keep showing the very latest lines. In case you manually scroll up, it will remain in that position. If you manually scroll down to the bottom again, it would resume auto-scrolling.</p>
+<p>The lines produced by stdout are colored black and the stderr lines are colored red.</p>
+<h3 id="disconnecting">Disconnecting</h3>
+<p>Clicking the ‘Disconnect' button in the main menu disconnects from the current device and goes back to the devices list / connect page.</p>
+<h3 id="managing-the-server">Managing the Server</h3>
+<p>To stop the server from automatically starting on boot:</p>
+<pre><code>sudo systemctl disable pisound-ctl
+</code></pre>
+<p>To re-enable automatic start:</p>
+<pre><code>sudo systemctl enable pisound-ctl
+</code></pre>
+<h2 id="customization">Customization</h2>
+<p>The main customizable parts are the scripts in <code>/usr/local/etc/pisound-ctl/</code>.</p>
+<h3 id="patch_listsh"><a href="https://github.com/BlokasLabs/pisound-ctl-scripts/blob/master/patch_list.sh"><code>patch_list.sh</code></a></h3>
+<p>This script is responsible for producing the list of items to show in ‘Start a Patch’ menu. Every line produced to stdout will appear as an item in the patch list.</p>
+<p>You may extend this file to support more kinds of files by getting their filenames to be echoed.</p>
+<h3 id="patch_runsh"><a href="https://github.com/BlokasLabs/pisound-ctl-scripts/blob/master/patch_run.sh"><code>patch_run.sh</code></a></h3>
+<p>This script receives the patch to launch in its arguments. It is responsible for checking the type of the provided patch and executing the appropriate launcher script. The last command of the script must launch the actual application which will handle the patch in blocking manner. Any post-setup which may be necessary (such as <code>aconnect</code> for MIDI) must be scheduled in background with a delay so it happens after the main app gets started. It must done this way so that the <code>pisound-ctl</code> is able to terminate the patch by killing the process id of the script.</p>
+<p>You may extend this file for handling more kinds of patches by extending the case statement.</p>
+<h3 id="run_pdsh"><a href="https://github.com/BlokasLabs/pisound-ctl-scripts/blob/master/run_pd.sh"><code>run_pd.sh</code></a></h3>
+<p>A launcher script for executing Pure Data. It has a block for the delayed post-setup of the software MIDI connections to the Pure Data. You may tweak the command line arguments which are used to launch Pure Data if necessary.</p>
+<p>You should create a dedicated script for launching a new file extension in its host software and get it called from <code>patch_run.sh</code>.</p>
+<h2 id="contribution-guide">Contribution Guide</h2>
+<p>The scripts used by <code>pisound-ctl</code> are hosted on GitHub here: <a href="https://github.com/BlokasLabs/pisound-ctl-scripts">https://github.com/BlokasLabs/pisound-ctl-scripts</a>.</p>
+<p>You may submit pull requests with your modifications and additions.</p>
+              
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../the-button/" title="The Button" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                The Button
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../pisound-%26-Pure-Data/" title="Pisound & Pure Data" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Pisound & Pure Data
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 VILNIAUS BLOKAS UAB
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/BlokasLabs" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/blokaslabs" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://www.facebook.com/blokaslabs/" class="md-footer-social__link fa fa-facebook"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application-30ac6a1727.js"></script>
+      <script>app.initialize({url:{base:".."}})</script>
+      
+      <script>
+  (function() {
+    var slk = document.createElement('script');
+    slk.src = 'https://cdn.slaask.com/chat.js';
+    slk.type = 'text/javascript';
+    slk.async = 'true';
+    slk.onload = slk.onreadystatechange = function() {
+      var rs = this.readyState;
+      if (rs && rs != 'complete' && rs != 'loaded') return;
+      try {
+        _slaask.init('1345291a0cc713cce6f3459dbc343b87');
+      } catch (e) {}
+    };
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(slk, s);
+  })();
+</script>
+    
+    
+      
+    
+  </body>
+</html>
