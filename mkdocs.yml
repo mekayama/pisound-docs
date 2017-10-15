@@ -39,6 +39,7 @@ pages:
 - MIDI: midi.md
 - Software: software.md
 - The Button: the-button.md
+- Pisound Config: pisound-config.md
 - Pisound & Pure Data: pisound-&-Pure-Data.md
 - Pisound App: pisound-app.md
 - MOD Emulator for Pisound: MODEP.md
