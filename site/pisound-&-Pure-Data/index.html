@@ -242,6 +242,18 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href="../pisound-config/" title="Pisound Config" class="md-nav__link">
+      Pisound Config
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
@@ -393,11 +405,10 @@
 <pre class="highlight"><code class="linenums">sudo apt-get install puredata</code></pre>
 
 <h2 id="configuring-pure-data">Configuring Pure Data</h2>
-<p>By default, Pure Data is launched when <a href="https://github.com/BlokasLabs/pisound/blob/master/pisound-btn/single_click.sh#L88">single-clicking</a> the button as so:</p>
-<pre class="highlight"><code class="linenums">nohup puredata -alsa -audioadddev pisound -alsamidi -channels 2 -r 48000 -mididev 1 -send &quot;;pd dsp 1&quot; &quot;$PURE_DATA_PATCH&quot; &gt; /dev/null 2&gt;&amp;1 &amp;</code></pre>
+<p>By default, Pure Data is launched when <a href="https://github.com/BlokasLabs/pisound/blob/master/scripts/common/start_puredata.sh#L60">single-clicking</a> the button as so:</p>
+<pre class="highlight"><code class="linenums">puredata -stderr -alsa -audioadddev pisound -alsamidi -channels 2 -r 48000 -mididev 1 -send &quot;;pd dsp 1&quot; $@ &amp;</code></pre>
 
-<p>You may want to customize the command line arguments for Pure Data according to your own needs. To do that, check the <a href="https://puredata.info/docs/faq/commandline">Pure Data's Command Line</a> documentation and edit /usr/local/etc/pisound/single-click.sh.</p>
-<p>Keep in mind that updating Pisound's software will backup and overwrite your scripts, so in that case, you may want to re-apply your changes. See <a href="../software/#installing-the-driver">here</a> for more details.</p>
+<p>You may want to customize the command line arguments for Pure Data according to your own needs. To do that, check the <a href="https://puredata.info/docs/faq/commandline">Pure Data's Command Line</a> documentation and edit <code>/usr/local/pisound/scripts/common/start_puredata.sh</code>.</p>
               
               
             </article>
@@ -411,7 +422,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../the-button/" title="The Button" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../pisound-config/" title="Pisound Config" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -420,7 +431,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                The Button
+                Pisound Config
               </span>
             </div>
           </a>

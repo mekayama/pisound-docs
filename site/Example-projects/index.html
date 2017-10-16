@@ -244,6 +244,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../pisound-config/" title="Pisound Config" class="md-nav__link">
+      Pisound Config
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="../pisound-%26-Pure-Data/" title="Pisound & Pure Data" class="md-nav__link">
       Pisound & Pure Data
     </a>
@@ -487,7 +499,7 @@ public        = no               # advertise this stream?
 #localDumpFile = recording.mp3   # Record also to a file</code></pre></p>
 <p>And finally, execute 'darkice' in a terminal or using Alt+F2:</p>
 <p><code>darkice</code></p>
-<p>Then from other devices you can connect to <code>http://raspberrypi_ip:8000/</code> to see generic information about the station and <code>http://raspberry_pi:8000/pisound</code> to listen. (Replace raspberrypi_ip in the URLs using the IP of the Raspberry Pi)</p>
+<p>Then from other devices you can connect to <code>http://raspberrypi_ip:8000/</code> to see generic information about the station and <code>http://raspberry_ip:8000/pisound</code> to listen. (Replace raspberrypi_ip in the URLs using the IP of the Raspberry Pi)</p>
 <p>For your station to be reachable outside of your local network, you need to have an externally accessible IP address provided by your ISP and you need to configure port forwarding on your router to forward requests on some port to port 8000 on Raspberry Pi. However, this is out of scope for this guide, there should be plenty of info around on how to set that up.</p>
 <h2 id="network-enabled-hi-fi-player">Network Enabled Hi-Fi Player</h2>
 <p>You can use Pisound with Volumio! Since version 2.129 (25-03-2017), Pisound's module is integrated into Volumio, so installing the latest version or updating should be enough to get 'pisound' listed in Playback Options. Just enable I2S DACs, pick Pisound and save the configuration! We recommend switching the mixer to 'Software', if you want to control the volume within Volumio. You can use 'Hardware' mixer if using the physical volume control on Pisound.</p>

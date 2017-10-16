@@ -266,6 +266,33 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#adding-more-button-actions" title="Adding More Button Actions" class="md-nav__link">
+    Adding More Button Actions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-quick-tutorial" title="A Quick Tutorial" class="md-nav__link">
+    A Quick Tutorial
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-did-just-happen" title="What Did Just Happen?" class="md-nav__link">
+    What Did Just Happen?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#main-action-scripts" title="Main Action Scripts" class="md-nav__link">
     Main Action Scripts
   </a>
@@ -322,8 +349,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#holdsh" title="hold.sh" class="md-nav__link">
-    hold.sh
+  <a href="#do_nothingsh" title="do_nothing.sh" class="md-nav__link">
+    do_nothing.sh
   </a>
   
 </li>
@@ -358,6 +385,18 @@
   
 </nav>
     
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../pisound-config/" title="Pisound Config" class="md-nav__link">
+      Pisound Config
+    </a>
   </li>
 
     
@@ -461,6 +500,33 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#adding-more-button-actions" title="Adding More Button Actions" class="md-nav__link">
+    Adding More Button Actions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-quick-tutorial" title="A Quick Tutorial" class="md-nav__link">
+    A Quick Tutorial
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-did-just-happen" title="What Did Just Happen?" class="md-nav__link">
+    What Did Just Happen?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#main-action-scripts" title="Main Action Scripts" class="md-nav__link">
     Main Action Scripts
   </a>
@@ -517,8 +583,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#holdsh" title="hold.sh" class="md-nav__link">
-    hold.sh
+  <a href="#do_nothingsh" title="do_nothing.sh" class="md-nav__link">
+    do_nothing.sh
   </a>
   
 </li>
@@ -563,7 +629,8 @@
               
                 
                 <h1 id="the-button">The Button</h1>
-<p>The Button is a customizable button on the Pisound board. There's a lot of mappable actions for it. The mapping is expressed in <a href="https://github.com/BlokasLabs/pisound/blob/master/pisound-btn/pisound.conf"><code>/etc/pisound.conf</code></a>:</p>
+<p>The Button is a customizable button on the Pisound board. There's a lot of mappable actions for it. The mappings are expressed in <a href="https://github.com/BlokasLabs/pisound/blob/master/pisound-btn/pisound.conf"><code>/etc/pisound.conf</code></a>. You may use <a href="../pisound-config"><code>pisound-config</code></a> to easily re-map the actions.</p>
+<p>The <code>/etc/pisound.conf</code> file allows mapping these actions:</p>
 <table>
 <thead>
 <tr>
@@ -576,93 +643,129 @@
 <tr>
 <td>DOWN</td>
 <td>Button gets pushed down.</td>
-<td><a href="https://github.com/BlokasLabs/pisound/blob/master/pisound-btn/scripts/down.sh">down.sh</a></td>
+<td><a href="https://github.com/BlokasLabs/pisound/blob/master/scripts/pisound-btn/system/down.sh">down.sh</a></td>
 </tr>
 <tr>
 <td>UP</td>
 <td>Button gets released up.</td>
-<td><a href="https://github.com/BlokasLabs/pisound/blob/master/pisound-btn/scripts/up.sh">up.sh</a></td>
+<td><a href="https://github.com/BlokasLabs/pisound/blob/master/scripts/pisound-btn/system/up.sh">up.sh</a></td>
 </tr>
 <tr>
-<td>SINGLE_CLICK</td>
+<td>CLICK_1</td>
 <td>Button was clicked once.</td>
-<td><a href="https://github.com/BlokasLabs/pisound/blob/master/pisound-btn/scripts/start_puredata.sh">start_puredata.sh</a></td>
+<td><a href="https://github.com/BlokasLabs/pisound/blob/master/scripts/pisound-btn/start_puredata.sh">start_puredata.sh</a></td>
 </tr>
 <tr>
-<td>DOUBLE_CLICK</td>
+<td>CLICK_2</td>
 <td>Button was double-clicked.</td>
-<td><a href="https://github.com/BlokasLabs/pisound/blob/master/pisound-btn/scripts/stop_puredata.sh">stop_puredata.sh</a></td>
+<td><a href="https://github.com/BlokasLabs/pisound/blob/master/scripts/pisound-btn/stop_puredata.sh">stop_puredata.sh</a></td>
 </tr>
 <tr>
-<td>TRIPLE_CLICK</td>
+<td>CLICK_3</td>
 <td>Button was triple-clicked.</td>
-<td><a href="https://github.com/BlokasLabs/pisound/blob/master/pisound-btn/scripts/toggle_wifi_hotspot.sh">toggle_wifi_hotspot.sh</a></td>
+<td><a href="https://github.com/BlokasLabs/pisound/blob/master/scripts/pisound-btn/toggle_wifi_hotspot.sh">toggle_wifi_hotspot.sh</a></td>
 </tr>
 <tr>
-<td>OTHER_CLICKS</td>
+<td>CLICK_OTHER</td>
 <td>Button was clicked between 4 and 8 times.</td>
-<td><a href="https://github.com/BlokasLabs/pisound/blob/master/pisound-btn/scripts/click.sh">click.sh</a></td>
+<td><a href="https://github.com/BlokasLabs/pisound/blob/master/scripts/pisound-btn/do_nothing.sh">do_nothing.sh</a></td>
 </tr>
 <tr>
 <td>HOLD_1S</td>
 <td>Button was held down between 0.4s and 3s.</td>
-<td><a href="https://github.com/BlokasLabs/pisound/blob/master/pisound-btn/scripts/hold.sh">hold.sh</a></td>
+<td><a href="https://github.com/BlokasLabs/pisound/blob/master/scripts/pisound-btn/do_nothing.sh">do_nothing.sh</a></td>
 </tr>
 <tr>
 <td>HOLD_3S</td>
 <td>Button was held down between 3s and 5s.</td>
-<td><a href="https://github.com/BlokasLabs/pisound/blob/master/pisound-btn/scripts/toggle_bt_discoverable.sh">toggle_bt_discoverable.sh</a></td>
+<td><a href="https://github.com/BlokasLabs/pisound/blob/master/scripts/pisound-btn/toggle_bt_discoverable.sh">toggle_bt_discoverable.sh</a></td>
 </tr>
 <tr>
 <td>HOLD_5S</td>
 <td>Button was held down between 5s and 7s.</td>
-<td><a href="https://github.com/BlokasLabs/pisound/blob/master/pisound-btn/scripts/shutdown.sh">shutdown.sh</a></td>
+<td><a href="https://github.com/BlokasLabs/pisound/blob/master/scripts/pisound-btn/shutdown.sh">shutdown.sh</a></td>
 </tr>
 <tr>
 <td>HOLD_OTHER</td>
 <td>Button was held down for more than 7s.</td>
-<td><a href="https://github.com/BlokasLabs/pisound/blob/master/pisound-btn/scripts/shutdown.sh">shutdown.sh</a></td>
+<td><a href="https://github.com/BlokasLabs/pisound/blob/master/scripts/pisound-btn/do_nothing.sh">do_nothing.sh</a></td>
 </tr>
 </tbody>
 </table>
-<p>* All default scripts are stored at <code>/usr/local/etc/pisound/</code></p>
-<p>You may modify these scripts to do whatever you wish or re-map any of the action to execute your own custom script. Keep in mind that whenever you install / update the pisound-btn, the existing scripts stored at <code>/usr/local/etc/pisound/</code> are first backed up to <code>/usr/local/etc/pisound/backups/&lt;current date&gt;</code>, so if you had overridden the default scripts, you will have to restore your scripts manually.</p>
-<p><strong>Note:</strong> The pisound-btn daemon process must be running in order for the button to work. The 'make install' automatically adds it to systemd autostart.</p>
+<p>* All default scripts are stored at <code>/usr/local/pisound/scripts/pisound-btn</code></p>
+<p>The hold action scripts get two arguments - first one for the count of clicks after which the button was held for a longer time and the second for the hold duration.</p>
+<p>The click action scripts get one argument - the number of clicks.</p>
+<p>You may modify these scripts to do whatever you wish or re-map any of the action to execute your own custom script.</p>
+<p><strong>Note:</strong> The pisound-btn daemon process must be running in order for the button to work.</p>
 <h2 id="mapping-the-actions">Mapping the Actions</h2>
 <p>You may re-map the default actions or point them to your own custom scripts to be executed by modifying the <a href="https://github.com/BlokasLabs/pisound/blob/master/pisound-btn/pisound.conf"><code>/etc/pisound.conf</code></a>.</p>
+<p>Use <a href="../pisound-config"><code>pisound-config</code></a> for effortless remapping.</p>
 <p>The config file format allows placing comments by prefixing the line with # character. Comments must begin at the first word of the line.</p>
 <p>Non-comment lines must consist of two space separated values. Spaces in the value are not permitted, therefore the absolute path to a custom script must not contain any spaces.</p>
 <pre class="highlight"><code class="linenums"># Example comment
 VARIABLE value_without_spaces</code></pre>
 
+<h2 id="adding-more-button-actions">Adding More Button Actions</h2>
+<p>For a new button action to appear in the <a href="../pisound-config"><code>pisound-config</code></a> button action list, a new .sh script should be added to <code>/usr/local/pisound/scripts/pisound-btn/</code>. Make sure the 'execute' (<code>chmod +x ...</code>) permission is set for the new script. The file name will appear in <code>pisound-config</code>'s Pisound Button Settings which can be used for mapping as an action for The Button interaction.</p>
+<p>The sky is definitely not the limit on what The Button can do, the shell scripts can be used to bootstrap things written in any other language.</p>
+<h3 id="a-quick-tutorial">A Quick Tutorial</h3>
+<ol>
+<li>
+<p>Run in a terminal the following commands:</p>
+<pre><code>cd /usr/local/pisound/scripts/pisound-btn
+sudo touch hello_world.sh &amp;&amp; sudo chmod +x hello_world.sh
+sudo nano hello_world.sh
+</code></pre>
+</li>
+<li>
+<p>Insert the following contents by copying and pasting (use <strong>ctrl+shift+v</strong> or <strong>shift+insert</strong> to paste into the terminal):</p>
+<pre><code>#!/bin/sh
+. /usr/local/pisound/scripts/common/common.sh
+log "Hello World!"
+flash_leds 100
+</code></pre>
+<p>Exit <code>nano</code> by hitting <strong>ctrl+x</strong>, press <strong>y</strong> and then <strong>enter</strong> to confirm write out.</p>
+</li>
+<li>
+<p>Then run <code>pisound-config</code>:</p>
+<pre><code>sudo pisound-config
+</code></pre>
+<p>Enter <strong>Change Pisound Button Settings</strong> submenu, select <strong>CLICK_1</strong>, and pick the new <strong>Hello World</strong> in the list.</p>
+<p>Now effective immediately, pressing The Button once will do a long-flash of the MIDI LEDs, as well as log a timestamped <em>Hello World!</em> to The Buttons' log (<code>sudo journalctl -f -u pisound-btn</code>)</p>
+</li>
+</ol>
+<h3 id="what-did-just-happen">What Did Just Happen?</h3>
+<p>In the first step, we have created a new script file with the execute permission set, and launched the <code>nano</code> editor.</p>
+<p>In the second step, the script got coded. The <code>#!/bin/sh</code> indicates that this is a shell script. The <code>. /usr/.../common.sh</code> line imports the common functions defined in <a href="https://github.com/BlokasLabs/pisound/blob/master/pisound-btn/scripts/common.sh"><code>common.sh</code></a>. The <code>log</code> line prepends the timestamp to the given text to print and prints it to the system log. The <code>flash_leds</code> line interacts with the Pisound driver and causes the LEDs to flash. Try playing with the number argument to see the difference in flash duration. (Maximum value is 255)</p>
+<p>In the third step we have remapped the single click action. This caused <code>/etc/pisound.conf</code> to get automatically updated accordingly.</p>
 <h2 id="main-action-scripts">Main Action Scripts</h2>
-<h3 id="shutdownsh-safely-shutdown-the-os"><a href="https://github.com/BlokasLabs/pisound/blob/master/pisound-btn/scripts/shutdown.sh"><code>shutdown.sh</code></a> - Safely Shutdown The OS</h3>
+<h3 id="shutdownsh-safely-shutdown-the-os"><a href="https://github.com/BlokasLabs/pisound/blob/master/scripts/pisound-btn/shutdown.sh"><code>shutdown.sh</code></a> - Safely Shutdown The OS</h3>
 <p>By default, holding the button down for more than 5 seconds and releasing will cause the system to shutdown cleanly by executing <code>sudo shutdown now</code>. The MIDI activity LEDs will blink ten times quickly to confirm that the hold action was triggered. It is safe to unplug the power supply once RPi's activity LEDs stop flashing on and off. To restart, unplug and plug the power in again.</p>
-<h3 id="start_puredatash-start-a-pure-data-patch"><a href="https://github.com/BlokasLabs/pisound/blob/master/pisound-btn/scripts/start_puredata.sh"><code>start_puredata.sh</code></a> - Start a Pure Data Patch</h3>
-<p>By default, clicking the button once runs a script that scans the attached media storage devices for '<strong>main.pd</strong>', or, if not found in external media, scans <code>/usr/local/etc/pisound-patches/</code>, kills all existing instances of Pure Data, then starts a new instance opening the file, enables audio and connects all the detected MIDI inputs and outputs to the Pure Data's virtual MIDI ports. ALSA engine of Pure Data is used.</p>
+<h3 id="start_puredatash-start-a-pure-data-patch"><a href="https://github.com/BlokasLabs/pisound/blob/master/scripts/pisound-btn/start_puredata.sh"><code>start_puredata.sh</code></a> - Start a Pure Data Patch</h3>
+<p>By default, clicking the button once runs a script that scans the attached media storage devices for '<strong>main.pd</strong>', or, if not found in external media, scans <code>/usr/local/puredata-patches/</code>, kills all existing instances of Pure Data, then starts a new instance opening the file, enables audio and connects all the detected MIDI inputs and outputs to the Pure Data's virtual MIDI ports. ALSA engine of Pure Data is used.</p>
 <p>The script will blink the MIDI Activity LEDs once just after it reacted to the click, and again 2 times after it succeeded launching the patch, or one long duration blink if an error occurred or no patch was found.</p>
-<h3 id="stop_puredatash-turn-off-pure-data-eject-usb"><a href="https://github.com/BlokasLabs/pisound/blob/master/pisound-btn/scripts/stop_puredata.sh"><code>stop_puredata.sh</code></a> - Turn Off Pure Data &amp; Eject USB</h3>
+<h3 id="stop_puredatash-turn-off-pure-data-eject-usb"><a href="https://github.com/BlokasLabs/pisound/blob/master/scripts/pisound-btn/stop_puredata.sh"><code>stop_puredata.sh</code></a> - Turn Off Pure Data &amp; Eject USB</h3>
 <p>Double clicking will stop all Pure Data instances and unmount all attached external media, so it can be safely removed.</p>
-<h3 id="toggle_wifi_hotspotsh-toggle-wifi-hotspot-mode"><a href="https://github.com/BlokasLabs/pisound/blob/master/pisound-btn/scripts/toggle_wifi_hotspot.sh"><code>toggle_wifi_hotspot.sh</code></a> - Toggle WiFi Hotspot Mode</h3>
+<h3 id="toggle_wifi_hotspotsh-toggle-wifi-hotspot-mode"><a href="https://github.com/BlokasLabs/pisound/blob/master/scripts/pisound-btn/toggle_wifi_hotspot.sh"><code>toggle_wifi_hotspot.sh</code></a> - Toggle WiFi Hotspot Mode</h3>
 <p>Triple-clicking will reconfigure the WiFi of RPi3 board or an external SoftAP capable USB WiFi adapter to behave as an Access Point (a.k.a. Wireless Router), as well as start 'touchosc2midi' monitor which will be ready to listen and forward MyOsc data as MIDI to other software such as Pure Data.</p>
-<p>By default, the AP will appear as '<strong>pisound</strong>', and the default password is '<strong>blokaslabs</strong>' (without quotes). You can change the name and password by modifying <code>/usr/local/etc/pisound/hostapd.conf</code> Keep in mind that this file gets backed up and overwritten after reinstalling or updating the pisound-btn software.</p>
+<p>By default, the AP will appear as '<strong>pisound</strong>', and the default password is '<strong>blokaslabs</strong>' (without quotes). You can change the name and password by using <a href="../pisound-config"><code>pisound-config</code></a>.</p>
 <p>The default IP address of RPi in WiFi Hotspot mode is 172.24.1.1 which you can use for ssh, VNC or wireless OSC / MIDI data! That means that you can easily interact with your system using just your laptop or phone, no more wires apart from power supply is needed! And it gets better, if the LAN cable is connected to RPi, it will share the Internet with the connected devices over WiFi!</p>
 <p>To send MIDI OSC messages from your other devices to Pisound, connect to the Pisound's WiFi network, and set the 172.24.1.1 IP as the host in the software you're using (such as MyOSC or TouchOSC) settings. See <a href="../faqs#how-to-send-wifi-midi-messages-to-your-raspberry-pi">here</a> for more information.</p>
 <p>To access RPi using ssh and/or VNC, make sure they're enabled in <code>raspi-config</code>. To enable, run in terminal:
 <pre class="highlight"><code class="language-bash linenums">sudo raspi-config</code></pre>
 Go to <strong>Interfacing Options</strong> and make sure <strong>ssh</strong> and <strong>VNC</strong> are enabled. If you don't see these options, go to <strong>Advanced Options</strong> and do <strong>Update</strong>.</p>
 <p>Triple-clicking again will revert to regular WiFi behavior.</p>
-<h3 id="toggle_bt_discoverablesh-toggle-bluetooth-discoverability-on-and-off"><a href="https://github.com/BlokasLabs/pisound/blob/master/pisound-btn/scripts/toggle_bt_discoverable.sh"><code>toggle_bt_discoverable.sh</code></a> - Toggle Bluetooth Discoverability on and Off</h3>
+<h3 id="toggle_bt_discoverablesh-toggle-bluetooth-discoverability-on-and-off"><a href="https://github.com/BlokasLabs/pisound/blob/master/scripts/pisound-btn/toggle_bt_discoverable.sh"><code>toggle_bt_discoverable.sh</code></a> - Toggle Bluetooth Discoverability on and Off</h3>
 <p>Holding The Button between 3 and 5 seconds will toggle the Bluetooth Discoverability. See <a href="../pisound-app">Pisound App</a> for controlling Pisound &amp; RPi remotely.</p>
 <h2 id="miscellaneous-scripts">Miscellaneous Scripts</h2>
-<h3 id="holdsh"><a href="https://github.com/BlokasLabs/pisound/blob/master/pisound-btn/scripts/hold.sh"><code>hold.sh</code></a></h3>
-<p>A placeholder script for hold actions. It gets two arguments - first one for the count of clicks after which the button was held for a longer time and the second for the hold duration.</p>
-<h3 id="downsh"><a href="https://github.com/BlokasLabs/pisound/blob/master/pisound-btn/scripts/down.sh"><code>down.sh</code></a></h3>
+<h3 id="do_nothingsh"><a href="https://github.com/BlokasLabs/pisound/blob/master/scripts/pisound-btn/do_nothing.sh"><code>do_nothing.sh</code></a></h3>
+<p>A script which literally does no nothing and is very good at it.</p>
+<h3 id="downsh"><a href="https://github.com/BlokasLabs/pisound/blob/master/scripts/pisound-btn/system/down.sh"><code>down.sh</code></a></h3>
 <p>A script that gets triggered every time The Button is pushed down. By default it has code to start periodic LED flashing, in case The Button is going to remain held down.</p>
-<h3 id="upsh"><a href="https://github.com/BlokasLabs/pisound/blob/master/pisound-btn/scripts/up.sh"><code>up.sh</code></a></h3>
+<h3 id="upsh"><a href="https://github.com/BlokasLabs/pisound/blob/master/scripts/pisound-btn/system/up.sh"><code>up.sh</code></a></h3>
 <p>The counter part of <code>down.sh</code> - it gets triggered every time The Button is released and by default it is stopping the LED flashing initiated in the down event.</p>
-<h3 id="commonsh"><a href="https://github.com/BlokasLabs/pisound/blob/master/pisound-btn/scripts/common.sh"><code>common.sh</code></a></h3>
-<p>Defines two commonly used APIs for Pisound - flash_leds and periodic_led_blink which are used by other scripts for feedback.</p>
+<h3 id="commonsh"><a href="https://github.com/BlokasLabs/pisound/blob/master/scripts/common/common.sh"><code>common.sh</code></a></h3>
+<p>Defines APIs shared between scripts for Pisound, such as flash_leds and periodic_led_blink which are used by other scripts for feedback.</p>
               
               
             </article>
@@ -691,13 +794,13 @@ Go to <strong>Interfacing Options</strong> and make sure <strong>ssh</strong> an
           </a>
         
         
-          <a href="../pisound-%26-Pure-Data/" title="Pisound & Pure Data" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../pisound-config/" title="Pisound Config" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Pisound & Pure Data
+                Pisound Config
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

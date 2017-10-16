@@ -319,6 +319,18 @@
 
 
   <li class="md-nav__item">
+    <a href="pisound-config/" title="Pisound Config" class="md-nav__link">
+      Pisound Config
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="pisound-&-Pure-Data/" title="Pisound & Pure Data" class="md-nav__link">
       Pisound & Pure Data
     </a>
@@ -477,18 +489,19 @@
 <h3 id="pisound-acrylic-case">Pisound Acrylic Case</h3>
 <p>The Pisound Acrylic Case consists of 2 cutout sheets of the enclosure sides and a plastic bag containing 4 short spacers, 4 longer ones and a button cap.</p>
 <h2 id="driver-setup">Driver Setup</h2>
+<p><img alt="pisound-config" src="https://raw.githubusercontent.com/wiki/BlokasLabs/pisound-docs/images/pisound-config.png" /></p>
 <p>If you don't have any Linux OS running on your Raspberry Pi, we suggest starting with <a href="https://www.raspberrypi.org/documentation/installation/installing-images/README.md">Raspbian</a>.</p>
-<p><a href="./specs#power-supply">Power your Raspberry Pi up</a> and install the driver by running the below commands in a terminal window:</p>
-<pre class="highlight"><code class="language-bash linenums">wget https://blokas.io/pisound/install-pisound.sh -O install-pisound.sh
-chmod +x install-pisound.sh
-./install-pisound.sh</code></pre>
+<p><a href="./specs#power-supply">Power your Raspberry Pi up</a> and install the Pisound software by running the below command in a terminal window:</p>
+<pre class="highlight"><code class="language-bash linenums">curl https://blokas.io/pisound/install-pisound.sh | sh</code></pre>
 
-<p>A couple of simple [Y/n] questions will be presented about whether to install some of the additional software to get you started faster and whether to set Pisound as the default card.</p>
-<p>After driver installation process is complete, reboot your Raspberry Pi (if the script asked for it at the end) and that's it. Now you can choose Pisound as your main sound card through native Volume widget and use it with any Linux Audio/MIDI software. Done! Thank You!</p>
+<p>This will set up the Blokas APT server and install all the software packages for Pisound. Then you may run <a href="./pisound-config"><code>pisound-config</code></a> to further customize your installation:</p>
+<pre class="highlight"><code class="language-bash linenums">sudo pisound-config</code></pre>
+
+<p>Done! Thank You!</p>
 <p>If you hit any issues during driver setup, please see <a href="./software#verifying-it-works">Verifying It Works</a> and provide us <a href="./software#feedback">feedback</a>.</p>
 <h2 id="connect-things">Connect Things</h2>
 <p><img alt="pisound-connections" src="https://raw.githubusercontent.com/wiki/BlokasLabs/pisound-docs/images/connections.png" /></p>
-<p>Raspberry Pi in combination with Pisound allows you to connect a huge variety of different types of audio-related gear. Thanks to Pisound's Stereo Input with wide-range gain control design, you can connect audio sources ranging from your bass guitar to a CD player or your modular synth. Using Stereo Output you can hook Pisound to any mixer, speakers or just plug in your headphones. Volume and Gain levels can be controlled using on-board knobs. For MIDI connectivity you also have a lot of options - MIDI In/Out through on-board DIN-5 sockets, USB-MIDI via RPi's USB ports or even <a href="./the-button#toggle-wifi-hotspot-mode">WiFi-MIDI</a>!</p>
+<p>Raspberry Pi in combination with Pisound allows you to connect a huge variety of different types of audio-related gear. Thanks to Pisound's Stereo Input with wide-range gain control design, you can connect audio sources ranging from your bass guitar to a CD player or your modular synth. Using Stereo Output you can hook Pisound to any mixer, speakers or just plug in your headphones. Volume and Gain levels can be controlled using on-board knobs. For MIDI connectivity you also have a lot of options - MIDI In/Out through on-board DIN-5 sockets, USB-MIDI via RPi's USB ports or even <a href="./the-button#toggle_wifi_hotspotsh-toggle-wifi-hotspot-mode">WiFi-MIDI</a>!</p>
 <h2 id="print-your-own-case">Print Your Own Case</h2>
 <p>To take the setup process one step further, you can even 3D-print your own case. All necessary files can be found <a href="https://github.com/BlokasLabs/pisound-case">here</a>.</p>
 <p><img alt="pisound-case" src="https://raw.githubusercontent.com/wiki/BlokasLabs/pisound-docs/images/pisound-case.png" /></p>

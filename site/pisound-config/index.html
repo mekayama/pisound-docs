@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-        <link rel="canonical" href="https://blokas.io/midi/">
+        <link rel="canonical" href="https://blokas.io/pisound-config/">
       
       
       
@@ -17,7 +17,7 @@
     
     
       
-        <title>MIDI - Pisound Docs</title>
+        <title>Pisound Config - Pisound Docs</title>
       
     
     
@@ -79,7 +79,7 @@
             
               
             
-            MIDI
+            Pisound Config
           
         </span>
       </div>
@@ -206,20 +206,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-    <a href="./" title="MIDI" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../midi/" title="MIDI" class="md-nav__link">
       MIDI
     </a>
-    
   </li>
 
     
@@ -251,11 +242,52 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../pisound-config/" title="Pisound Config" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Pisound Config
+      </label>
+    
+    <a href="./" title="Pisound Config" class="md-nav__link md-nav__link--active">
       Pisound Config
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#adding-more-button-actions" title="Adding More Button Actions" class="md-nav__link">
+    Adding More Button Actions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing" title="Contributing" class="md-nav__link">
+    Contributing
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -348,6 +380,25 @@
     
   
   
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#adding-more-button-actions" title="Adding More Button Actions" class="md-nav__link">
+    Adding More Button Actions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing" title="Contributing" class="md-nav__link">
+    Contributing
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -359,12 +410,17 @@
                
               
                 
-                <h1 id="midi">MIDI</h1>
-<p>A standard MIDI interface is available via two female DIN-5 connectors. Unlike usual MIDI solutions for Raspberry Pi, MIDI on pisound is implemented using high speed SPI and a dedicated microcontroller for translating SPI data to serial MIDI byte streams and it's readily recognized by audio software as an ALSA MIDI device. The loopback latency of MIDI was measured to be 2.105ms. In addition, there are MIDI activity LEDs for both Input and Output indicating the flow of MIDI events.</p>
-<p>In addition, pisound lets you take advantage of WiFi-MIDI. When WiFi Hotspot mode is enabled via <a href="../the-button#toggle_wifi_hotspotsh-toggle-wifi-hotspot-mode">triple clicking The Button</a> (unless the WiFi toggle was remapped), <code>touchosc2midi</code> daemon gets launched. It translates OSC messages to MIDI events so you can control audio software running on Raspberry Pi from your smartphone or tablet.</p>
-<p>And of course you can use USB-MIDI devices as usual by connecting them to Raspberry Pi USB ports.</p>
-<p><img alt="signal delay between MIDI" src="https://raw.githubusercontent.com/wiki/BlokasLabs/pisound-docs/images/midi_latency.png" /></p>
-<p>An oscillogram showing signal delay between MIDI input (yellow) and MIDI output (cyan) of 2.105 ms when echoing</p>
+                <h1 id="pisound-config">Pisound Config</h1>
+<p><img alt="pisound-config" src="https://raw.githubusercontent.com/wiki/BlokasLabs/pisound-docs/images/pisound-config.png" /></p>
+<p><code>pisound-config</code> allows reconfiguring the most important aspects of the system for use with Pisound, as well as setting up additional software and displaying some useful information. It is available since version 1.05 of <code>pisound-btn</code>.</p>
+<p>To get started, simply open a terminal and run:</p>
+<pre class="highlight"><code class="language-bash linenums">sudo pisound-config</code></pre>
+
+<p>If you get a command not found error, see <a href="../software#installingupdating-the-pisound-software">Installing/Updating The Pisound Software</a> for instructions on how to get the latest version.</p>
+<h2 id="adding-more-button-actions">Adding More Button Actions</h2>
+<p>See <a href="../the-button#adding-more-button-actions">Adding More Button Actions</a> for a quick tutorial on how to make more actions appear in the action selection.</p>
+<h2 id="contributing">Contributing</h2>
+<p>Contributions are welcome! Feel free to discuss your experience and request features at our <a href="https://community.blokas.io/">community</a>. You may submit pull requests for the config at <a href="https://github.com/BlokasLabs/pisound">GitHub</a>.</p>
               
               
             </article>
@@ -378,7 +434,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../audio/" title="Audio" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../the-button/" title="The Button" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -387,19 +443,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Audio
+                The Button
               </span>
             </div>
           </a>
         
         
-          <a href="../software/" title="Software" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../pisound-%26-Pure-Data/" title="Pisound & Pure Data" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Software
+                Pisound & Pure Data
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
