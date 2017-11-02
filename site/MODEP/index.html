@@ -476,7 +476,7 @@
 <h2 id="setup-instructions">Setup Instructions</h2>
 <p><img alt="modep-setup" src="https://raw.githubusercontent.com/wiki/BlokasLabs/pisound-docs/images/modep-setup.png" /></p>
 <p>The fastest way to start messing around with MOD system is to download already prepared MODEP image file based on Rasbian Lite OS <a href="http://www.mediafire.com/file/oya6bq5sct658ba/modep.zip">here</a> (follow <a href="https://www.raspberrypi.org/documentation/installation/installing-images/">these instructions</a> to install the image on your SD card).</p>
-<p>For manual setup visit <a href="https://github.com/BlokasLabs/modep">this page</a>. </p>
+<p>For manual setup visit <a href="https://github.com/BlokasLabs/modep">this page</a>.</p>
 <h2 id="running-modep">Running MODEP</h2>
 <ul>
 <li>Mount your freshly baked SD card to your Pi</li>
@@ -485,6 +485,7 @@
 <li>Open your browser and go to this address <code>172.24.1.1</code> (you should see something like in the image below)</li>
 <li>That’s it. Now you can start building your pedalboards</li>
 </ul>
+<p>Note that Jack is running as 'root' user, in case you'd like to manually run jack_capture or other jack utils, it should be done as 'root' too.</p>
 <p><img alt="modep-default" src="https://raw.githubusercontent.com/wiki/BlokasLabs/pisound-docs/images/modep-default.png" /></p>
 <h2 id="configuration">Configuration</h2>
 <ul>
