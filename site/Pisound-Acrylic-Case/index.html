@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-        <link rel="canonical" href="https://blokas.io/pisound-&-Pure-Data/">
+        <link rel="canonical" href="https://blokas.io/Pisound-Acrylic-Case/">
       
       
       
@@ -17,7 +17,7 @@
     
     
       
-        <title>Pisound & Pure Data - Pisound Docs</title>
+        <title>Pisound Acrylic Case - Pisound Docs</title>
       
     
     
@@ -79,7 +79,7 @@
             
               
             
-            Pisound & Pure Data
+            Pisound Acrylic Case
           
         </span>
       </div>
@@ -242,11 +242,45 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../Pisound-Acrylic-Case/" title="Pisound Acrylic Case" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Pisound Acrylic Case
+      </label>
+    
+    <a href="./" title="Pisound Acrylic Case" class="md-nav__link md-nav__link--active">
       Pisound Acrylic Case
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#assembly-instructions" title="Assembly Instructions" class="md-nav__link">
+    Assembly Instructions
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -266,45 +300,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Pisound & Pure Data
-      </label>
-    
-    <a href="./" title="Pisound & Pure Data" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../pisound-%26-Pure-Data/" title="Pisound & Pure Data" class="md-nav__link">
       Pisound & Pure Data
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#configuring-pure-data" title="Configuring Pure Data" class="md-nav__link">
-    Configuring Pure Data
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -389,8 +389,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#configuring-pure-data" title="Configuring Pure Data" class="md-nav__link">
-    Configuring Pure Data
+  <a href="#assembly-instructions" title="Assembly Instructions" class="md-nav__link">
+    Assembly Instructions
   </a>
   
 </li>
@@ -408,23 +408,23 @@
                
               
                 
-                <h1 id="pisound-pure-data">Pisound &amp; Pure Data</h1>
-<p>Using Pisound you can run your Pure Data patches straight from a USB thumb drive with a press of a button with no need to connect an external monitor, keyboard or mouse.</p>
-<p>Plug in a USB drive containing your Pure Data patch, main patch file called <strong>main.pd</strong>, plug in any additional MIDI controller/keyboard, press The Button and Voilà!</p>
-<p>You can read more about The Button functionality <a href="../the-button">here</a>.</p>
-<p>Also you may be interested in the <a href="../pisound-app">Pisound App</a>.</p>
-<p>If you haven't already, you can install Pure Data by running the following command in a Terminal window:</p>
-<div class="highlight"><pre><span></span>sudo apt-get install puredata
-</pre></div>
-
-
-<h2 id="configuring-pure-data">Configuring Pure Data</h2>
-<p>By default, Pure Data is launched when <a href="https://github.com/BlokasLabs/pisound/blob/master/scripts/common/start_puredata.sh#L60">single-clicking</a> the button as so:</p>
-<div class="highlight"><pre><span></span>puredata -stderr -alsa -audioadddev pisound -alsamidi -channels 2 -r 48000 -mididev 1 -send &quot;;pd dsp 1&quot; $@ &amp;
-</pre></div>
-
-
-<p>You may want to customize the command line arguments for Pure Data according to your own needs. To do that, check the <a href="https://puredata.info/docs/faq/commandline">Pure Data's Command Line</a> documentation and edit <code>/usr/local/pisound/scripts/common/start_puredata.sh</code>.</p>
+                <h1 id="pisound-acrylic-case">Pisound Acrylic Case</h1>
+<p><img alt="pisound-case" src="https://raw.githubusercontent.com/wiki/BlokasLabs/pisound-docs/images/pisound-case.jpg" /></p>
+<p>A simple but really sturdy and beautiful case for your Pisound and Raspberry Pi. The enclosure is cut from semi-transparent 3mm thick acrylic sheet. Round engravings indicate the Output ports and the Volume potentiometer. </p>
+<p>The Pisound Acrylic Case consists of 2 cutout sheets of the enclosure sides and a plastic bag containing 4 short spacers, 4 longer ones and a button cap.</p>
+<h2 id="assembly-instructions">Assembly Instructions</h2>
+<p><img alt="pisound-case-instructions" src="https://raw.githubusercontent.com/wiki/BlokasLabs/pisound-docs/images/pisound-case-instructions.png" /></p>
+<ol>
+<li>Peel off the protective film from both sides of all of the acrylic parts.</li>
+<li>Screw the 25mm Pisound standoffs (J) to the shortest standoffs (N) leaving your Pi (L) sandwiched in between.</li>
+<li>Mount the Pisound board (H) on top of the Pi (L) and fix it with the 8mm standoffs. (E)</li>
+<li>Mount the jack side of the case (I) and screw the jack socket nuts. (K)</li>
+<li>Attach the bottom side of the case (O) and fix it with the Pisound 6mm screws. (P)</li>
+<li>Slide the MIDI ports side (D), USB ports side (M) and the headers side (G) into the bottom part of the enclosure. Engravings should be facing the internal side.</li>
+<li>Place the top side of the case (C) on top of the construction leaving the button cap (F) in between.</li>
+<li>Screw the remaining 4 screws (B) and push the knobs (A) on.</li>
+<li>Done! Thank you!</li>
+</ol>
               
               
             </article>
@@ -438,7 +438,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../pisound-config/" title="Pisound Config" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../the-button/" title="The Button" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -447,19 +447,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Pisound Config
+                The Button
               </span>
             </div>
           </a>
         
         
-          <a href="../pisound-app/" title="Pisound App" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../pisound-config/" title="Pisound Config" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Pisound App
+                Pisound Config
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

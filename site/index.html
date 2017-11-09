@@ -319,6 +319,18 @@
 
 
   <li class="md-nav__item">
+    <a href="Pisound-Acrylic-Case/" title="Pisound Acrylic Case" class="md-nav__link">
+      Pisound Acrylic Case
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="pisound-config/" title="Pisound Config" class="md-nav__link">
       Pisound Config
     </a>
@@ -488,14 +500,19 @@
 <p>Mount Pisound on top of your Raspberry Pi via the 40-pin header and fasten it with the screws provided while the RPi is unpowered, so it appears as in the image at the top. See compatible Raspberry Pi models <a href="./specs#supported-raspberry-pi-models">here</a>.</p>
 <h3 id="pisound-acrylic-case">Pisound Acrylic Case</h3>
 <p>The Pisound Acrylic Case consists of 2 cutout sheets of the enclosure sides and a plastic bag containing 4 short spacers, 4 longer ones and a button cap.</p>
+<p>You can find the assembly instructions <a href="./Pisound-Acrylic-Case#assembly-instructions">here</a>.</p>
 <h2 id="driver-setup">Driver Setup</h2>
 <p><img alt="pisound-config" src="https://raw.githubusercontent.com/wiki/BlokasLabs/pisound-docs/images/pisound-config.png" /></p>
 <p>If you don't have any Linux OS running on your Raspberry Pi, we suggest starting with <a href="https://www.raspberrypi.org/documentation/installation/installing-images/README.md">Raspbian</a>.</p>
 <p><a href="./specs#power-supply">Power your Raspberry Pi up</a> and install the Pisound software by running the below command in a terminal window:</p>
-<pre class="highlight"><code class="language-bash linenums">curl https://blokas.io/pisound/install-pisound.sh | sh</code></pre>
+<div class="highlight"><pre><span></span>curl https://blokas.io/pisound/install-pisound.sh <span class="p">|</span> sh
+</pre></div>
+
 
 <p>This will set up the Blokas APT server and install all the software packages for Pisound. Then you may run <a href="./pisound-config"><code>pisound-config</code></a> to further customize your installation:</p>
-<pre class="highlight"><code class="language-bash linenums">sudo pisound-config</code></pre>
+<div class="highlight"><pre><span></span>sudo pisound-config
+</pre></div>
+
 
 <p>Done! Thank You!</p>
 <p>If you hit any issues during driver setup, please see <a href="./software#verifying-it-works">Verifying It Works</a> and provide us <a href="./software#feedback">feedback</a>.</p>

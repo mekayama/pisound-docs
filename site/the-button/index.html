@@ -394,6 +394,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../Pisound-Acrylic-Case/" title="Pisound Acrylic Case" class="md-nav__link">
+      Pisound Acrylic Case
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="../pisound-config/" title="Pisound Config" class="md-nav__link">
       Pisound Config
     </a>
@@ -702,8 +714,10 @@
 <p>Use <a href="../pisound-config"><code>pisound-config</code></a> for effortless remapping.</p>
 <p>The config file format allows placing comments by prefixing the line with # character. Comments must begin at the first word of the line.</p>
 <p>Non-comment lines must consist of two space separated values. Spaces in the value are not permitted, therefore the absolute path to a custom script must not contain any spaces.</p>
-<pre class="highlight"><code class="linenums"># Example comment
-VARIABLE value_without_spaces</code></pre>
+<div class="highlight"><pre><span></span># Example comment
+VARIABLE value_without_spaces
+</pre></div>
+
 
 <h2 id="adding-more-button-actions">Adding More Button Actions</h2>
 <p>For a new button action to appear in the <a href="../pisound-config"><code>pisound-config</code></a> button action list, a new .sh script should be added to <code>/usr/local/pisound/scripts/pisound-btn/</code>. Make sure the 'execute' (<code>chmod +x ...</code>) permission is set for the new script. The file name will appear in <code>pisound-config</code>'s Pisound Button Settings which can be used for mapping as an action for The Button interaction.</p>
@@ -752,7 +766,9 @@ flash_leds 100
 <p>The default IP address of RPi in WiFi Hotspot mode is 172.24.1.1 which you can use for ssh, VNC or wireless OSC / MIDI data! That means that you can easily interact with your system using just your laptop or phone, no more wires apart from power supply is needed! And it gets better, if the LAN cable is connected to RPi, it will share the Internet with the connected devices over WiFi!</p>
 <p>To send MIDI OSC messages from your other devices to Pisound, connect to the Pisound's WiFi network, and set the 172.24.1.1 IP as the host in the software you're using (such as MyOSC or TouchOSC) settings. See <a href="../faqs#how-to-send-wifi-midi-messages-to-your-raspberry-pi">here</a> for more information.</p>
 <p>To access RPi using ssh and/or VNC, make sure they're enabled in <code>raspi-config</code>. To enable, run in terminal:
-<pre class="highlight"><code class="language-bash linenums">sudo raspi-config</code></pre>
+<div class="highlight"><pre><span></span>sudo raspi-config
+</pre></div>
+
 Go to <strong>Interfacing Options</strong> and make sure <strong>ssh</strong> and <strong>VNC</strong> are enabled. If you don't see these options, go to <strong>Advanced Options</strong> and do <strong>Update</strong>.</p>
 <p>Triple-clicking again will revert to regular WiFi behavior.</p>
 <h3 id="toggle_bt_discoverablesh-toggle-bluetooth-discoverability-on-and-off"><a href="https://github.com/BlokasLabs/pisound/blob/master/scripts/pisound-btn/toggle_bt_discoverable.sh"><code>toggle_bt_discoverable.sh</code></a> - Toggle Bluetooth Discoverability on and Off</h3>
@@ -794,13 +810,13 @@ Go to <strong>Interfacing Options</strong> and make sure <strong>ssh</strong> an
           </a>
         
         
-          <a href="../pisound-config/" title="Pisound Config" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../Pisound-Acrylic-Case/" title="Pisound Acrylic Case" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Pisound Config
+                Pisound Acrylic Case
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
