@@ -414,15 +414,11 @@
 <p>You can read more about The Button functionality <a href="../the-button">here</a>.</p>
 <p>Also you may be interested in the <a href="../pisound-app">Pisound App</a>.</p>
 <p>If you haven't already, you can install Pure Data by running the following command in a Terminal window:</p>
-<div class="highlight"><pre><span></span>sudo apt-get install puredata
-</pre></div>
-
+<pre class="highlight"><code class="linenums">sudo apt-get install puredata</code></pre>
 
 <h2 id="configuring-pure-data">Configuring Pure Data</h2>
 <p>By default, Pure Data is launched when <a href="https://github.com/BlokasLabs/pisound/blob/master/scripts/common/start_puredata.sh#L60">single-clicking</a> the button as so:</p>
-<div class="highlight"><pre><span></span>puredata -stderr -alsa -audioadddev pisound -alsamidi -channels 2 -r 48000 -mididev 1 -send &quot;;pd dsp 1&quot; $@ &amp;
-</pre></div>
-
+<pre class="highlight"><code class="linenums">puredata -stderr -alsa -audioadddev pisound -alsamidi -channels 2 -r 48000 -mididev 1 -send &quot;;pd dsp 1&quot; $@ &amp;</code></pre>
 
 <p>You may want to customize the command line arguments for Pure Data according to your own needs. To do that, check the <a href="https://puredata.info/docs/faq/commandline">Pure Data's Command Line</a> documentation and edit <code>/usr/local/pisound/scripts/common/start_puredata.sh</code>.</p>
               

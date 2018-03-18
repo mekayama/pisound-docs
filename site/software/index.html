@@ -468,24 +468,18 @@
 <p>You can find the source code for The Button <a href="https://github.com/BlokasLabs/pisound/tree/master/pisound-btn">here</a> and kernel module <a href="https://github.com/raspberrypi/linux/blob/rpi-4.9.y/sound/soc/bcm/pisound.c">here</a>.</p>
 <h2 id="installingupdating-the-pisound-software">Installing/Updating The Pisound Software</h2>
 <p>To install the Pisound software, run the below commands in a terminal.</p>
-<div class="highlight"><pre><span></span>curl https://blokas.io/pisound/install-pisound.sh <span class="p">|</span> sh
-</pre></div>
-
+<pre class="highlight"><code class="language-bash linenums">curl https://blokas.io/pisound/install-pisound.sh | sh</code></pre>
 
 <p>This will set up the Blokas APT server and install all the software packages for Pisound. Then you may run <a href="../pisound-config"><code>pisound-config</code></a> to further customize your installation:</p>
-<div class="highlight"><pre><span></span>sudo pisound-config
-</pre></div>
-
+<pre class="highlight"><code class="language-bash linenums">sudo pisound-config</code></pre>
 
 <h2 id="verifying-it-works">Verifying It Works</h2>
 <p>Once the system boots up, run a terminal and run:
-<div class="highlight"><pre><span></span> amidi -l
+<pre class="highlight"><code class="linenums"> amidi -l
  arecord -l
- aplay -l
-</pre></div>
-
+ aplay -l</code></pre>
 You should see output similar to:
-<div class="highlight"><pre><span></span> pi@raspberrypi:~ $ amidi -l
+<pre class="highlight"><code class="linenums"> pi@raspberrypi:~ $ amidi -l
  Dir Device    Name
  IO  hw:1,0    pisound MIDI PS-10JAD4Q
  pi@raspberrypi:~ $ arecord -l
@@ -510,9 +504,7 @@ You should see output similar to:
    Subdevice #0: subdevice #0
  card 1: pisound [pisound], device 0: PS-10JAD4Q snd-soc-dummy-dai-0 []
    Subdevices: 1/1
-   Subdevice #0: subdevice #0
-</pre></div>
-</p>
+   Subdevice #0: subdevice #0</code></pre></p>
 <h3 id="feedback">Feedback</h3>
 <p>In case you're having difficulties with getting Pisound to run, contact us and the community <a href="https://community.blokas.io/">here</a>, provide the exact error and the last command you've executed.</p>
 <h2 id="compatible-software">Compatible Software</h2>
