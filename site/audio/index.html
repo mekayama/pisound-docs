@@ -231,8 +231,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#5v-bias-solder-jumpers" title="5V Bias Solder Jumpers" class="md-nav__link">
-    5V Bias Solder Jumpers
+  <a href="#6v-bias-solder-jumpers" title="6V Bias Solder Jumpers" class="md-nav__link">
+    6V Bias Solder Jumpers
   </a>
   
 </li>
@@ -424,8 +424,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#5v-bias-solder-jumpers" title="5V Bias Solder Jumpers" class="md-nav__link">
-    5V Bias Solder Jumpers
+  <a href="#6v-bias-solder-jumpers" title="6V Bias Solder Jumpers" class="md-nav__link">
+    6V Bias Solder Jumpers
   </a>
   
 </li>
@@ -468,8 +468,8 @@
 <p>There is one unbalanced stereo input accessible via &frac14;" (6.35mm) jack slot on Pisound. The input stereo connector can also be used as two unbalanced mono channels. Audio inputs are AC coupled to a gain stage built using <a href="http://www.ti.com/lit/ds/symlink/opa2134.pdf">OPA4134</a> op-amps. Input resistance is 100kOhm for each channel. The gain can be adjusted simultaneously for both the left and the right channels from 0dB to +40dB with an on-board potentiometer. The maximum audio signal level before clipping is 5Vpp (at 0dB gain). The range of the gain adjustment can be divided into two sections. The first section occurs at rotation between 0% and 80% and it is used to precisely adjust for the high-level signals (line out, headphone amp out, etc...). The tight section at the maximum rotation of the gain pot acts as a +20dB switch for the low-level signals (guitar, microphone, etc.). When the signal clipping occurs in any channel, the red LED lights up and fades out after last clipped sample. Audio to digital conversion is carried out by <a href="http://www.ti.com/lit/ds/symlink/pcm1804.pdf">PCM1804</a> converter. An on-board clock oscillator delivers a clock signal to the ADC, which divides it according to the selected sample rate. ADC acts as the master of I2S line. pisound supports three sample rates: 48kHz, 96kHz and 192kHz. A filter at the input stage of PCM1804 ensures good anti-<a href="https://en.wikipedia.org/wiki/Aliasing">aliasing</a>.</p>
 <p><img alt="pisound-side" src="https://raw.githubusercontent.com/wiki/BlokasLabs/pisound-docs/images/gain_vs_pot.jpg" />
 Gain and input sensitivity versus position of <strong>GAIN</strong> pot</p>
-<h3 id="5v-bias-solder-jumpers">5V Bias Solder Jumpers</h3>
-<p>There are two solder jumpers near the input port, one for each input channel. By default, the jumpers are unsoldered. If the solder jumper is soldered&ast;, it enables the 5V bias voltage with a 2.2kOhm resistor for the input channel, and that allows connecting electret microphones.</p>
+<h3 id="6v-bias-solder-jumpers">6V Bias Solder Jumpers</h3>
+<p>There are two solder jumpers near the input port, one for each input channel. By default, the jumpers are unsoldered. If the solder jumper is soldered&ast;, it enables the 6V bias voltage with a 2.2kOhm resistor for the input channel, and that allows connecting electret microphones.</p>
 <table>
 <thead>
 <tr>
